@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DiccionarioInterface } from '@interfaces/databaseInterface';
-import localJson from '@assets/database/diccionario.json';
+// import localJson from '@assets/database/diccionario.json';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class DiccionarioService {
     if (data) {
       this.allData = JSON.parse(data);
     } else {
-      this.allData = localJson;
+      this.allData = {};
     }
     this.http.get('https://raw.githubusercontent.com/litospayaso/livre/master/src/assets/database/diccionario.json').subscribe(
       (response: DiccionarioInterface) => {

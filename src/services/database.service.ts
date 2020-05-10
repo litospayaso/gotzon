@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { DatabaseInterface } from '@interfaces/databaseInterface';
-import localJson from '@assets/database/livre-export.json';
+import localJson from '@assets/database/bagoaz-export.json';
 
 @Injectable({
   providedIn: 'root'
