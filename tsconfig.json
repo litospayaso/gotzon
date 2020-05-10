@@ -24,6 +24,7 @@
       "@pages/*": ["./src/app/pages/*"],
       "@services/*": ["./src/services/*"],
       "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/app/components/*"],
     },
     "resolveJsonModule": true,
     "esModuleInterop": true

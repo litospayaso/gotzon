@@ -6,15 +6,13 @@
 
     <div *ngIf="exerciseText" class="exercise-text-container">
       <mat-card>
-        <div *ngIf="current.type === 'galego'">
+        <div *ngIf="current.type === 'euskera'">
           <span *ngFor="let word of exerciseText" (click)="translate(word)" [matMenuTriggerFor]="menu">
             {{word.concat(" ")}}
           </span>
-          <mat-menu #menu="matMenu">
-            <mat-list>
-              <mat-list-item *ngFor="let translated of translatedWord">{{translated}}</mat-list-item>
-              <mat-divider></mat-divider>
-            </mat-list>
+          <mat-menu #menu="matMenu" class="menu-popup">
+            <mat-spinner *ngIf="loading"></mat-spinner>
+            <app-translation *ngIf="!loading" [translated]="translated"></app-translation>
           </mat-menu>
         </div>
         <div *ngIf="current.type === 'castelan'">

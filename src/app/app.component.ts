@@ -78,7 +78,7 @@ export class AppComponent implements OnInit {
   }
 
   getDatabase() {
-    this.http.get('https://raw.githubusercontent.com/litospayaso/livre/master/src/assets/database/livre-export.json').subscribe(
+    this.http.get('https://raw.githubusercontent.com/litospayaso/gogoan/master/src/assets/database/bagoaz-export.json').subscribe(
       (response: DatabaseInterface) => {
         console.log('%c data', 'background: #df03fc; color: #f8fc03', response);
         this.databaseService.setData(response);

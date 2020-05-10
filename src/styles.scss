@@ -32,8 +32,17 @@ mat-toolbar {
 }
 
 .mat-menu-content {
-    padding-top: 16px;
+    margin: 26px;
     font-family: Baloo;
     width: 100%;
     text-align: center;
+    width: 280px;
+    min-height: 150px;
+}
+.mat-menu-panel {
+    max-width: unset !important;
+    max-height: unset !important;
+}
+.mat-card-header-text {
+    margin: 0 !important;
 }

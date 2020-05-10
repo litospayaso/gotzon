@@ -10,7 +10,7 @@ import { DiccionarioService } from '@services/diccionario.service';
 import { CorrectionComponent } from '@pages/evaluation/correction/correction.component';
 
 import { ExerciseInterface } from '@interfaces/databaseInterface';
-import { CorrectionInterface } from '@interfaces/commonInterface';
+import { CorrectionInterface, TranslatedInterface } from '@interfaces/commonInterface';
 
 @Component({
   selector: 'app-evaluation',
@@ -33,8 +33,9 @@ export class EvaluationComponent implements OnInit {
   public lesson: number;
   public congratulations = false;
   public correctionSent = false;
-  public translatedWord: string[] = [''];
+  public loading = false;
   private correctMessages = ['Moi bem! ', 'Correcto! '];
+  public translated: TranslatedInterface | boolean;
 
   constructor(
     public dialog: MatDialog,
@@ -54,8 +55,10 @@ export class EvaluationComponent implements OnInit {
     });
   }
 
-  public translate(word) {
-    this.translatedWord = this.diccionarioService.translate(word);
+  public async translate(word) {
+    this.loading = true;
+    this.translated = await this.diccionarioService.translate(word);
+    this.loading = false;
   }
 
   public onKeyPress(event) {
