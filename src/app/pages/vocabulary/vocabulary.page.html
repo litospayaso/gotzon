@@ -1,3 +1,18 @@
-<ion-content [fullscreen]="true">
-  vocabulary Page!
+<ion-content [fullscreen]="true" (keypress)="onKeyPress($event)">
+  <ion-card>
+    <ion-card-content *ngIf="current">
+      {{current.spanish}}
+    </ion-card-content>
+  </ion-card>
+  <!-- Default textarea -->
+  <ion-item>
+    <ion-textarea [(ngModel)]="response"></ion-textarea>
+  </ion-item>
+
+  <div *ngIf="isCorrecting">
+    {{isCorrecting}}
+  </div>
+
+  <ion-button expand="block" *ngIf="!isCorrecting" (click)="checkResponse()">Zuzendu</ion-button>
+  <ion-button expand="block" *ngIf="isCorrecting" (click)="continue()">Jarraitu</ion-button>
 </ion-content>

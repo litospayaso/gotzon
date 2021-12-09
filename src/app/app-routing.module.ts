@@ -6,7 +6,7 @@ import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: VocabularyPage,
   },
   {
     path: 'home',
