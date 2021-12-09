@@ -1,0 +1,1590 @@
+[
+  {
+      "spanish": [
+          "Lunes"
+      ],
+      "euskaraz": [
+          "Astelehena"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "Martes"
+      ],
+      "euskaraz": [
+          "Asteartea",
+          "Martitzena"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "Miercoles"
+      ],
+      "euskaraz": [
+          "Asteazkena",
+          "Eguaztena"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "Jueves"
+      ],
+      "euskaraz": [
+          "Osteguna",
+          "Eguena"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "Viernes"
+      ],
+      "euskaraz": [
+          "Ostirala",
+          "barikua"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "Sábado"
+      ],
+      "euskaraz": [
+          "Larunbata",
+          "zapatua"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "Domingo"
+      ],
+      "euskaraz": [
+          "Igandea",
+          "domeka"
+      ],
+      "tags": [
+          "Aste",
+          "datak",
+          "eguna"
+      ]
+  },
+  {
+      "spanish": [
+          "mes"
+      ],
+      "euskaraz": [
+          "hilabetea"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "Enero"
+      ],
+      "euskaraz": [
+          "Urtarrila"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "Febrero"
+      ],
+      "euskaraz": [
+          "Otsaila"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "Marzo"
+      ],
+      "euskaraz": [
+          "Martxoa"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "abril"
+      ],
+      "euskaraz": [
+          "apirila"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "mayo"
+      ],
+      "euskaraz": [
+          "maiatza"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "junio"
+      ],
+      "euskaraz": [
+          "ekaina"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "julio"
+      ],
+      "euskaraz": [
+          "utzaila"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "agosto"
+      ],
+      "euskaraz": [
+          "abuztua"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "septiembre"
+      ],
+      "euskaraz": [
+          "iraila"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "octubre"
+      ],
+      "euskaraz": [
+          "urria"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "noviembre"
+      ],
+      "euskaraz": [
+          "azaroa"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "diciembre"
+      ],
+      "euskaraz": [
+          "abendua"
+      ],
+      "tags": [
+          "datak",
+          "hilabeteak"
+      ]
+  },
+  {
+      "spanish": [
+          "semana"
+      ],
+      "euskaraz": [
+          "aste"
+      ],
+      "tags": [
+          "Aste",
+          "datak"
+      ]
+  },
+  {
+      "spanish": [
+          "día"
+      ],
+      "euskaraz": [
+          "egun"
+      ],
+      "tags": [
+          "Aste",
+          "datak"
+      ]
+  },
+  {
+      "spanish": [
+          "barrio"
+      ],
+      "euskaraz": [
+          "auzo"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "camino"
+      ],
+      "euskaraz": [
+          "bide"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "bajo (Dirección)"
+      ],
+      "euskaraz": [
+          "behea"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "bloque"
+      ],
+      "euskaraz": [
+          "blokea"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "escalera"
+      ],
+      "euskaraz": [
+          "eskailera"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "derecha"
+      ],
+      "euskaraz": [
+          "eskuin",
+          "eskuma",
+          "eskoia"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "izquierda"
+      ],
+      "euskaraz": [
+          "ezker"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "calle"
+      ],
+      "euskaraz": [
+          "kale"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "plaza"
+      ],
+      "euskaraz": [
+          "plaza"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "número"
+      ],
+      "euskaraz": [
+          "zenbaki"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "pueblo"
+      ],
+      "euskaraz": [
+          "herria"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "ciudad"
+      ],
+      "euskaraz": [
+          "iria"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "provincia"
+      ],
+      "euskaraz": [
+          "herrialdea"
+      ],
+      "tags": [
+          "helbidea"
+      ]
+  },
+  {
+      "spanish": [
+          "ser"
+      ],
+      "euskaraz": [
+          "izan"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "ir"
+      ],
+      "euskaraz": [
+          "joan"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "venir"
+      ],
+      "euskaraz": [
+          "etorri"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "traer"
+      ],
+      "euskaraz": [
+          "ekarri"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "comprar"
+      ],
+      "euskaraz": [
+          "erosi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "recordar"
+      ],
+      "euskaraz": [
+          "gogoratu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "bailar"
+      ],
+      "euskaraz": [
+          "dantzatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "leer"
+      ],
+      "euskaraz": [
+          "irakurri"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "correr"
+      ],
+      "euskaraz": [
+          "korrika egin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "ayudar"
+      ],
+      "euskaraz": [
+          "lagundu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "servir"
+      ],
+      "euskaraz": [
+          "bota"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "sentarse"
+      ],
+      "euskaraz": [
+          "eseri"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "despertar"
+      ],
+      "euskaraz": [
+          "esnatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "decir"
+      ],
+      "euskaraz": [
+          "esan"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "levantar"
+      ],
+      "euskaraz": [
+          "altxatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "saber"
+      ],
+      "euskaraz": [
+          "jakin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "merendar"
+      ],
+      "euskaraz": [
+          "askaldu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "desayunar"
+      ],
+      "euskaraz": [
+          "gosaldu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "comer"
+      ],
+      "euskaraz": [
+          "bazkaldu",
+          "jan"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "cenar"
+      ],
+      "euskaraz": [
+          "afaldu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "beber"
+      ],
+      "euskaraz": [
+          "edan"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "limpiar"
+      ],
+      "euskaraz": [
+          "garbitu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "escuchar"
+      ],
+      "euskaraz": [
+          "entzun"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "escribir"
+      ],
+      "euskaraz": [
+          "idatzi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "ver"
+      ],
+      "euskaraz": [
+          "ikusi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "hacer"
+      ],
+      "euskaraz": [
+          "egin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "trabajar"
+      ],
+      "euskaraz": [
+          "lan egin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "dormir"
+      ],
+      "euskaraz": [
+          "lo egin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "preguntar"
+      ],
+      "euskaraz": [
+          "galdera"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "parar"
+      ],
+      "euskaraz": [
+          "gelditu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "llamar"
+      ],
+      "euskaraz": [
+          "deitu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "perder"
+      ],
+      "euskaraz": [
+          "galdu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "vestir"
+      ],
+      "euskaraz": [
+          "jantzi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "estar"
+      ],
+      "euskaraz": [
+          "egon"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "levantarse (ponerse de pie)"
+      ],
+      "euskaraz": [
+          "Jaiki"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "pintar"
+      ],
+      "euskaraz": [
+          "marraztu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "dar"
+      ],
+      "euskaraz": [
+          "eman",
+          "emon"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "buscar"
+      ],
+      "euskaraz": [
+          "bilatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "andar"
+      ],
+      "euskaraz": [
+          "ibili"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "jugar"
+      ],
+      "euskaraz": [
+          "jolastu",
+          "jokatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "duchar"
+      ],
+      "euskaraz": [
+          "dutxatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "necesitar"
+      ],
+      "euskaraz": [
+          "behar"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "salir"
+      ],
+      "euskaraz": [
+          "irten"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "corregir"
+      ],
+      "euskaraz": [
+          "zuzendu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "mirar"
+      ],
+      "euskaraz": [
+          "begiratu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "hablar"
+      ],
+      "euskaraz": [
+          "hitz egin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "entrar",
+          "meter"
+      ],
+      "euskaraz": [
+          "sartu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "tocar (palpar)"
+      ],
+      "euskaraz": [
+          "ukitu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "aparecer"
+      ],
+      "euskaraz": [
+          "agertu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "coger"
+      ],
+      "euskaraz": [
+          "hartu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "utilizar"
+      ],
+      "euskaraz": [
+          "erabili"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "bajar"
+      ],
+      "euskaraz": [
+          "bajatu",
+          "jaitsi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "llenar"
+      ],
+      "euskaraz": [
+          "bete"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "conocer"
+      ],
+      "euskaraz": [
+          "ezagutu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "morir"
+      ],
+      "euskaraz": [
+          "hil"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "vivir"
+      ],
+      "euskaraz": [
+          "bizi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "subit"
+      ],
+      "euskaraz": [
+          "igo"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "gritar"
+      ],
+      "euskaraz": [
+          "ohiukatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "viajar"
+      ],
+      "euskaraz": [
+          "bidaiatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "unir"
+      ],
+      "euskaraz": [
+          "lotu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "conseguir"
+      ],
+      "euskaraz": [
+          "lortu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "cortar"
+      ],
+      "euskaraz": [
+          "ebaki"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "encender"
+      ],
+      "euskaraz": [
+          "pistu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "quitar"
+      ],
+      "euskaraz": [
+          "kendu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "empezar"
+      ],
+      "euskaraz": [
+          "hasi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "golpear",
+          "tocar (un instrumento)"
+      ],
+      "euskaraz": [
+          "jo"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "abrir"
+      ],
+      "euskaraz": [
+          "ireki",
+          "zabaldu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "cerrar"
+      ],
+      "euskaraz": [
+          "itxi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "nacer"
+      ],
+      "euskaraz": [
+          "jaio"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "quedar (con alguien)",
+          "parar"
+      ],
+      "euskaraz": [
+          "gelditu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "enfadarse"
+      ],
+      "euskaraz": [
+          "haserretu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "acercarse"
+      ],
+      "euskaraz": [
+          "hurbildu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "alejarse"
+      ],
+      "euskaraz": [
+          "urrundu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "llegar"
+      ],
+      "euskaraz": [
+          "heldu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "mojar"
+      ],
+      "euskaraz": [
+          "busti"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "suceder"
+      ],
+      "euskaraz": [
+          "gertatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "caerse"
+      ],
+      "euskaraz": [
+          "Jauzi",
+          "erori"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "acostarse"
+      ],
+      "euskaraz": [
+          "oheratu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "soñar"
+      ],
+      "euskaraz": [
+          "amets egin"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "ganar"
+      ],
+      "euskaraz": [
+          "irabazi"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "vender"
+      ],
+      "euskaraz": [
+          "saldu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "cuidar"
+      ],
+      "euskaraz": [
+          "zaindu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "preparar"
+      ],
+      "euskaraz": [
+          "prestatu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "seguir"
+      ],
+      "euskaraz": [
+          "jarraitu"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "volver",
+          "traducir"
+      ],
+      "euskaraz": [
+          "itzuli"
+      ],
+      "tags": [
+          "aditz"
+      ]
+  },
+  {
+      "spanish": [
+          "hoy"
+      ],
+      "euskaraz": [
+          "gaur"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "ayer"
+      ],
+      "euskaraz": [
+          "atzo"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "ahora"
+      ],
+      "euskaraz": [
+          "orain"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "antes"
+      ],
+      "euskaraz": [
+          "lehen",
+          "aurretik"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "al poco de"
+      ],
+      "euskaraz": [
+          "laster"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "después"
+      ],
+      "euskaraz": [
+          "gero",
+          "ostean",
+          "ondoren"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "inmediatamente"
+      ],
+      "euskaraz": [
+          "berehala"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "tan pronto como"
+      ],
+      "euskaraz": [
+          "bezain laster",
+          "bezain azkar"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "hasta"
+      ],
+      "euskaraz": [
+          "arte"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "mañana"
+      ],
+      "euskaraz": [
+          "bihar"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "pasado mañana"
+      ],
+      "euskaraz": [
+          "etzi"
+      ],
+      "tags": [
+          "denborazkoak"
+      ]
+  },
+  {
+      "spanish": [
+          "normalmente"
+      ],
+      "euskaraz": [
+          "normalean"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "siempre"
+      ],
+      "euskaraz": [
+          "beti"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "cada día"
+      ],
+      "euskaraz": [
+          "egunero"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "cada semana"
+      ],
+      "euskaraz": [
+          "astero"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "cada mes"
+      ],
+      "euskaraz": [
+          "hilero"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "cada año"
+      ],
+      "euskaraz": [
+          "urtero"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "muchas veces"
+      ],
+      "euskaraz": [
+          "askotan"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  },
+  {
+      "spanish": [
+          "veces"
+      ],
+      "euskaraz": [
+          "aldiz"
+      ],
+      "tags": [
+          "denborazkoak",
+          "ohiturazko"
+      ]
+  }
+]

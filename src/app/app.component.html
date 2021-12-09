@@ -1,36 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<mat-toolbar class="toolbar">
-  <mat-icon *ngIf="!pageBack" (click)="toogleMenu()" class="menu-button">menu</mat-icon>
-  <mat-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root">arrow_back</mat-icon>
-  {{title}}
-</mat-toolbar>
-
-<div id="mySidepanel" class="lateral-panel" [ngStyle]="{'width': widthMenu}" (click)="toogleMenu()">
-  <div class="lateral-panel-container">
-    <mat-list *ngFor="let page of appPages">
-      <mat-list-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-        <mat-icon aria-hidden="false">{{page.icon}}</mat-icon>
-        {{page.title}}
-      </mat-list-item>
-      <mat-divider></mat-divider>
-    </mat-list>
-  </div>
-</div>
-
-
-<div class="container"> 
-  <div class="lateral-menu">
-    <mat-list *ngFor="let page of appPages">
-      <mat-list-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-        <mat-icon aria-hidden="false">{{page.icon}}</mat-icon>
-        {{page.title}}
-      </mat-list-item>
-      <mat-divider></mat-divider>
-    </mat-list>
-  </div>
-  <div class="outlet-container" [ngClass]="title">
-    <router-outlet></router-outlet>
-  </div>
-</div>
-
-
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        {{title}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="container"> 
+    <!-- <div class="lateral-menu">
+      <ion-list *ngFor="let page of appPages">
+        <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
+          <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
+          {{page.title}}
+        </ion-item>
+      </ion-list>
+    </div> -->
+    <div class="outlet-container" [ngClass]="title">
+      <ion-router-outlet class="outlet-elem"></ion-router-outlet>
+    </div>
+  </div>  
+</ion-app>

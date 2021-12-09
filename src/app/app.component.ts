@@ -1,117 +1,69 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+
+import { Platform } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, ResolveEnd } from '@angular/router';
+import { Storage } from '@ionic/storage';
 
-import { DatabaseInterface } from '@interfaces/databaseInterface';
-import { DatabaseService } from '@services/database.service';
+import { filter, last } from 'rxjs/operators';
 
-import { filter } from 'rxjs/operators';
+import appPages from '@resources/appPages.json';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   public title = '';
   public pageBack = '';
   public widthMenu = '0';
-  public appPages = [
-    {
-      title: 'Liçons',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'Exercícios',
-      url: '/exercises',
-      icon: 'create'
-    },
-    {
-      title: 'Pesquisador',
-      url: '/search',
-      icon: 'search'
-    },
-    // {
-    //   title: 'Diccionario',
-    //   url: '/diccionario',
-    //   icon: 'book'
-    // },
-    {
-      title: 'Acerca do Livre',
-      url: '/about',
-      icon: 'help'
-    }
-  ];
-
+  public appPages = appPages;
   constructor(
-    private http: HttpClient,
-    private databaseService: DatabaseService,
+    private platform: Platform,
     private router: Router,
-    private route: ActivatedRoute,
+    private splashScreen: SplashScreen,
+    private statusBar: StatusBar,
+    private storage: Storage
   ) {
-    // this.initializeApp();
+    storage.get('lastRoute').then(lastRoute => {
+      if (lastRoute && lastRoute !== '/' && router.url === '/') {
+        this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), {skipLocationChange: true });
+      }
+    });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
+      const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
+      storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
-        case 'lesson':
+        case 'analysis':
+          if (rootToSave.split('/').length > 2) {
+            this.pageBack = '/games';
+          }
+          break;
+        case 'settings':
           this.pageBack = '/home';
           break;
         default:
           this.pageBack = '';
           break;
       }
-      this.setTitle(routerName);
-      if (root.url.split('/').length > 2) {
-        this.title = this.databaseService.getAllData().lessons.find(e => e.number === Number(root.url.split('/').pop()) ? Number(root.url.split('/').pop()) : Number(root.url.split('/').pop().split('?')[0])).title;
-        this.pageBack = routerName === 'evaluation' ? '/exercises' : '/home';
-      } else {
-        this.pageBack = '';
-      }
+      this.title = routerName;
     });
+    this.initializeApp();
   }
 
-  ngOnInit() {
-    this.getDatabase();
-  }
-
-  getDatabase() {
-    this.http.get('https://raw.githubusercontent.com/litospayaso/gogoan/master/src/assets/database/bagoaz-export.json').subscribe(
-      (response: DatabaseInterface) => {
-        console.log('%c data', 'background: #df03fc; color: #f8fc03', response);
-        this.databaseService.setData(response);
-      });
+  initializeApp() {
+    this.platform.ready().then(() => {
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
+    });
   }
 
   public toogleMenu() {
     this.widthMenu = this.widthMenu === '0' ? '100vw' : '0';
-  }
-  setTitle(root: string) {
-    let title = 'Livre';
-    switch (root) {
-      case 'diccionario':
-        title = 'Diccionario';
-        break;
-      case 'home':
-        title = 'Liçons';
-        break;
-      case 'exercises':
-        title = 'Exercícios';
-        break;
-      case 'search':
-        title = 'Pesquisador';
-        break;
-      case 'about':
-        title = 'Acerca do Livre';
-        break;
-      case 'lesson':
-        break;
-      default:
-        break;
-    }
-    this.title = title;
   }
 
 }

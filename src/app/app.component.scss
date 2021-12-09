@@ -1,7 +1,12 @@
 $screen-lg-min: 992px;
-
+.menu-icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    top: 3px;
+}
 .lateral-panel {
-    font-family: Baloo;
+    //font-family: Baloo;
     width: 0;
     position: fixed;
     height: 100vh;
@@ -14,10 +19,14 @@ $screen-lg-min: 992px;
   
 
     .lateral-panel-container {
-        background-color: white;
+        background-color: var(--ion-item-background, var(--ion-background-color, #fff));
         box-sizing: border-box;
         height: 100vh;
         width: 304px;
+
+        .icon-list-element {
+            padding-right: 8px;
+        }
     }
 }
 
@@ -27,13 +36,6 @@ $screen-lg-min: 992px;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-mat-list-item {
-    font-family: Baloo;
-}
-
-ion-title {
-    font-family: Baloo;
-}
 .back-arrow {
     margin-left: 16px;
 }
@@ -43,12 +45,12 @@ ion-label {
 }
 
 .toolbar {
-    font-family: Baloo;
+    //font-family: Baloo;
     max-height: 56px;
 }
 
 .container {
-    font-family: Baloo;
+    //font-family: Baloo;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -69,22 +71,29 @@ ion-label {
         width: 100%;
         padding: 8px;
         overflow-y: auto;
-        font-family: Baloo;
+        //font-family: Baloo;
 
-        &.Exercícios {
-          background-image: url("../assets/img/backgrounds/exercisesBackground.jpg");
-        }
+        // &.Exercícios {
+        //   background-image: url("../assets/img/backgrounds/exercisesBackground.jpg");
+        // }
 
-        &.Liçons, &.Livre {
-          background-image: url("../assets/img/backgrounds/homeBackground.jpg");
-        }
+        // &.Liçons, &.Livre {
+        //   background-image: url("../assets/img/backgrounds/homeBackground.jpg");
+        // }
 
-        &.Pesquisador {
-            background-image: url("../assets/img/backgrounds/searchBackground.jpg");
-            background-size: cover;
-        }
-        &.Acerca {
-            background-image: none;
+        // &.Pesquisador {
+        //     background-image: url("../assets/img/backgrounds/searchBackground.jpg");
+        //     background-size: cover;
+        // }
+        // &.Acerca {
+        //     background-image: none;
+        // }
+
+        .outlet-elem {
+            inset: 12px;
+            @media (max-width: $screen-lg-min) {
+                inset: 0px;
+            }
         }
     }
 }
