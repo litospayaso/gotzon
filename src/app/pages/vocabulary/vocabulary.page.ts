@@ -35,10 +35,10 @@ export class VocabularyPage implements AfterViewInit {
     this.current.euskaraz.forEach(e => correct = correct || this.compareStrings(this.response ? this.response : '' , e));
     if (correct){
       this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() =>  Math.random() - 0.5 ).pop();
-      this.evaluationClass = 'zuzen';
+      this.evaluationClass = 'correct';
     }else{
       this.isCorrecting = `Akats: ${this.current.euskaraz[0]}`;
-      this.evaluationClass = 'akats';
+      this.evaluationClass = 'error';
     }
   }
 

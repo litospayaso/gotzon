@@ -91,6 +91,7 @@ ion-label {
 
         .outlet-elem {
             inset: 12px;
+            padding: 50px;
             @media (max-width: $screen-lg-min) {
                 inset: 0px;
             }

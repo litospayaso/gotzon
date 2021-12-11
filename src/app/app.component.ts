@@ -29,7 +29,7 @@ export class AppComponent {
   ) {
     storage.get('lastRoute').then(lastRoute => {
       if (lastRoute && lastRoute !== '/' && router.url === '/') {
-        this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), {skipLocationChange: true });
+        this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), { skipLocationChange: true });
       }
     });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
@@ -37,20 +37,15 @@ export class AppComponent {
       const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
       storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
+      console.log(`%c routerName`, `background: #df03fc; color: #f8fc03`, routerName);
       switch (routerName) {
-        case 'analysis':
-          if (rootToSave.split('/').length > 2) {
-            this.pageBack = '/games';
-          }
-          break;
-        case 'settings':
-          this.pageBack = '/home';
+        case 'vocabulary':
+          this.title = 'Hiztegia (vocabulario)';
           break;
         default:
           this.pageBack = '';
           break;
       }
-      this.title = routerName;
     });
     this.initializeApp();
   }
