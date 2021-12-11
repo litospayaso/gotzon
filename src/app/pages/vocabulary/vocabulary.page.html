@@ -7,7 +7,7 @@
     </ion-card>
     <!-- Default textarea -->
     <ion-item>
-      <ion-textarea [(ngModel)]="response"></ion-textarea>
+      <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea>
     </ion-item>
 
     <div *ngIf="isCorrecting" class="evaluation" [ngClass]="evaluationClass">

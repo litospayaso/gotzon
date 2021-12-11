@@ -37,7 +37,6 @@ export class AppComponent {
       const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
       storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
-      console.log(`%c routerName`, `background: #df03fc; color: #f8fc03`, routerName);
       switch (routerName) {
         case 'vocabulary':
           this.title = 'Hiztegia (vocabulario)';
