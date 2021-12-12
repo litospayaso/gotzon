@@ -38,6 +38,7 @@ export class AppComponent {
       storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
+        case '':
         case 'vocabulary':
           this.title = 'Hiztegia (vocabulario)';
           break;
