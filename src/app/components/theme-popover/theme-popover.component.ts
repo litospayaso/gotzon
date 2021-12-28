@@ -17,7 +17,6 @@ export class ThemePopoverComponent implements OnInit {
   ngOnInit() {}
 
   continue(route: string){
-    console.log(`%c route`, `background: #df03fc; color: #f8fc03`, route);
     this.popoverController.dismiss({route});
   }
 

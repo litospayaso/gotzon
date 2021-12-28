@@ -35,7 +35,6 @@ export class AppComponent {
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
       const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
-      console.log(`%c rootToSave`, `background: #df03fc; color: #f8fc03`, rootToSave);
       storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {

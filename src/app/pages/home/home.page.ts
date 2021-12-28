@@ -30,7 +30,6 @@ export class HomePage implements AfterViewInit {
     this.requestService.getLessons().subscribe(themes => {
       this.themes = themes;
       loader.dismiss();
-      console.log(`%c themes`, `background: #df03fc; color: #f8fc03`, themes);
     });
   }
 

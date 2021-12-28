@@ -24,7 +24,6 @@ export class LessonPage implements AfterViewInit {
     });
     loader.present();
     this.activatedRoute.params.subscribe(params => {
-      console.log(`%c params`, `background: #df03fc; color: #f8fc03`, params);
       let {id} = params;
       id = id.split('?')[0];
       this.requestService.getLesson(id).subscribe(data => {
