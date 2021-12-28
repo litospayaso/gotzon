@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ThemeInterface } from '@app/interfaces/theme.interface';
+import { LessonsInterface } from '@app/interfaces/lessons.interface';
 
 @Component({
   selector: 'app-theme-popover',
@@ -8,7 +8,7 @@ import { ThemeInterface } from '@app/interfaces/theme.interface';
 })
 export class ThemePopoverComponent implements OnInit {
 
-  @Input() theme: ThemeInterface;
+  @Input() theme: LessonsInterface;
   constructor() { }
 
   ngOnInit() {}

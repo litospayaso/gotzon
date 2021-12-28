@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { VocabularyInterface } from '@app/interfaces/vocabulary.interface';
-import { ThemeInterface } from '@app/interfaces/theme.interface';
+import { LessonsInterface } from '@app/interfaces/lessons.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -16,9 +16,9 @@ export class RequestService {
     return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/vocabulary.json`) as Observable<VocabularyInterface[]>;
   }
 
-  public getThemes(): Observable<ThemeInterface[][]> {
+  public getLessons(): Observable<LessonsInterface[][]> {
     // tslint:disable-next-line: max-line-length
-    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/themes.json`) as Observable<ThemeInterface[][]>;
+    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/lessons.json`) as Observable<LessonsInterface[][]>;
   }
 
 }

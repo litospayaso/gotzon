@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 import { RequestService } from '@services/request.service';
-import { ThemeInterface } from '@app/interfaces/theme.interface';
+import { LessonsInterface } from '@app/interfaces/lessons.interface';
 import { PopoverController } from '@ionic/angular';
 import { ThemePopoverComponent } from '@components/theme-popover/theme-popover.component';
 import { TypeScriptEmitter } from '@angular/compiler';
@@ -13,7 +13,7 @@ import { TypeScriptEmitter } from '@angular/compiler';
 })
 export class HomePage implements AfterViewInit {
 
-  public themes: ThemeInterface[][] = [];
+  public themes: LessonsInterface[][] = [];
 
   constructor(
     public requestService: RequestService,
@@ -26,22 +26,22 @@ export class HomePage implements AfterViewInit {
       message: 'Cargando...'
     });
     loader.present();
-    this.requestService.getThemes().subscribe(themes => {
+    this.requestService.getLessons().subscribe(themes => {
       this.themes = themes;
       loader.dismiss();
       console.log(`%c themes`, `background: #df03fc; color: #f8fc03`, themes);
     });
   }
 
-  public async openTheme(theme: ThemeInterface, ev: any){
+  public async openTheme(theme: LessonsInterface, ev: any){
     console.log(`%c theme`, `background: #df03fc; color: #f8fc03`, theme);
     const popover = await this.popoverController.create({
       component: ThemePopoverComponent,
       animated: true,
-      cssClass: 'my-custom-class',
+      cssClass: 'popover-class',
       event: ev,
       componentProps: {theme},
-      showBackdrop​: false
+      showBackdrop: false
     });
     await popover.present();
   }
