@@ -21,9 +21,8 @@ export class RequestService {
     return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/lessons.json`) as Observable<LessonsInterface[][]>;
   }
 
-  public getLesson(id: string): Observable<LessonsInterface[][]> {
+  public getLesson(id: string): Observable<string> {
     // tslint:disable-next-line: max-line-length
-    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/lessons/${id}.txt`) as Observable<LessonsInterface[][]>;
+    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/lessons/${id}.html`, {responseType: 'text'}) as Observable<string>;
   }
-
 }

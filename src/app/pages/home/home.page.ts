@@ -35,7 +35,6 @@ export class HomePage implements AfterViewInit {
   }
 
   public async openTheme(theme: LessonsInterface, ev: any){
-    console.log(`%c theme`, `background: #df03fc; color: #f8fc03`, theme);
     const popover = await this.popoverController.create({
       component: ThemePopoverComponent,
       animated: true,
@@ -47,8 +46,7 @@ export class HomePage implements AfterViewInit {
     await popover.present();
 
     const {data} = await popover.onDidDismiss();
-    console.log('onDidDismiss resolved with role', data.route);
-    if (data.route) {
+    if (data?.route) {
       this.router.navigate([data.route], {skipLocationChange: true });
     }
   }

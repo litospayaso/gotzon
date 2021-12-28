@@ -1,4 +1,0 @@
-<div>
-  <h1>1.Agurrak</h1>
-  <p>esto es un ejemplo de lección</p>
-</div>

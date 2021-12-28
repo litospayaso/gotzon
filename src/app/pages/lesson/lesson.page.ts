@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 import { RequestService } from '@services/request.service';
 
@@ -9,19 +10,28 @@ import { RequestService } from '@services/request.service';
 })
 export class LessonPage implements AfterViewInit {
 
+  public lesson = '';
   constructor(
     private activatedRoute: ActivatedRoute,
+    public loadingController: LoadingController,
     public requestService: RequestService
   ){
-    this.activatedRoute.params.subscribe(params => {
-      const {id} = params;
-      this.requestService.getLesson(id).subscribe(data => {
-        console.log(`%c data`, `background: #df03fc; color: #f8fc03`, data);
-      });
-    });
   }
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
+    const loader = await this.loadingController.create({
+      message: 'Cargando...'
+    });
+    loader.present();
+    this.activatedRoute.params.subscribe(params => {
+      console.log(`%c params`, `background: #df03fc; color: #f8fc03`, params);
+      let {id} = params;
+      id = id.split('?')[0];
+      this.requestService.getLesson(id).subscribe(data => {
+        this.lesson = data;
+        loader.dismiss();
+      });
+    });
   }
 
 }

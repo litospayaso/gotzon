@@ -1,8 +1,8 @@
 <div class="popover-container">
   <div class="title"> {{theme.title}}</div>
   <div class="buttons-container">
-    <ion-button expand="block" (click)="continue('/lesson/' + theme.id)">Gaia (Tema)</ion-button>
-    <ion-button expand="block" (click)="continue('/exercises/' + theme.id)">Ariketak (Ejercicios)</ion-button>
-    <ion-button expand="block" (click)="continue('/dictionary/' + theme.id)">Hiztegia (vocabulario)</ion-button>
+    <ion-button expand="block" (click)="continue('/lesson/' + theme.id + '?title=' + theme.title)">Gaia (Tema)</ion-button>
+    <ion-button expand="block" (click)="continue('/exercises/' + theme.id + '?title=' + theme.title)">Ariketak (Ejercicios)</ion-button>
+    <ion-button expand="block" (click)="continue('/dictionary/' + theme.id + '?title=' + theme.title)">Hiztegia (vocabulario)</ion-button>
   </div>
 </div>
