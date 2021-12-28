@@ -5,6 +5,11 @@
   align-items: center;
   .theme {
     margin: 20px;
+    .row-theme {
+      display: flex;
+      flex-direction: row;
+      margin: 0 25px;
+    }
     .theme-element {
       cursor: pointer;
       .theme-icon{
@@ -24,4 +29,9 @@
       }
     }
   }
+}
+
+.training-button {
+  margin-bottom: 15px;
+  margin-right: 15px;
 }

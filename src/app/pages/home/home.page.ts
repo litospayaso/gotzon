@@ -13,7 +13,7 @@ import { TypeScriptEmitter } from '@angular/compiler';
 })
 export class HomePage implements AfterViewInit {
 
-  public themes: ThemeInterface[] = [];
+  public themes: ThemeInterface[][] = [];
 
   constructor(
     public requestService: RequestService,

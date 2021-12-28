@@ -1,9 +1,9 @@
 <ion-content [fullscreen]="true">
 
   <div class="themes-container">
-    <div *ngFor="let theme of themes; let i = index" class="theme">
-      <div class="row-theme" [id]="theme.id">
-        <div class="theme-element" (click)="openTheme(theme, $event)">
+    <div *ngFor="let row of themes; let i = index" class="theme">
+      <div class="row-theme" [id]="index">
+        <div *ngFor="let theme of row" class="theme-element" (click)="openTheme(theme, $event)">
           <div class="theme-icon">
             <img [src]="'https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/icons/' + theme.img" [alt]="theme.img">
           </div>
@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed" skipLocationChange routerDirection="root" [routerLink]="['/vocabulary']">
+  <ion-fab class="training-button" vertical="bottom" horizontal="end" slot="fixed" skipLocationChange routerDirection="root" [routerLink]="['/vocabulary']">
     <ion-fab-button>
       <ion-icon name="barbell-outline"></ion-icon>
     </ion-fab-button>

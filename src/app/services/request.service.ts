@@ -16,9 +16,9 @@ export class RequestService {
     return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/vocabulary.json`) as Observable<VocabularyInterface[]>;
   }
 
-  public getThemes(): Observable<ThemeInterface[]> {
+  public getThemes(): Observable<ThemeInterface[][]> {
     // tslint:disable-next-line: max-line-length
-    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/themes.json`) as Observable<ThemeInterface[]>;
+    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/themes.json`) as Observable<ThemeInterface[][]>;
   }
 
 }
