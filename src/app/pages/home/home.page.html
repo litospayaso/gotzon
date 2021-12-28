@@ -1,16 +1,24 @@
 <ion-content [fullscreen]="true">
 
-  <div class="games-container">
-    <div *ngFor="let page of appPages; let i = index" class="game-element" skipLocationChange routerDirection="root" [routerLink]="[page.url]">
-      <div class="game-fen" [id]="i">
-        <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
-      </div>
-      <div class="game-description">
-        <div class="game-title">
-          {{page.title}}
+  <div class="themes-container">
+    <div *ngFor="let theme of themes; let i = index" class="theme">
+      <div class="row-theme" [id]="theme.id">
+        <div class="theme-element" (click)="openTheme(theme, $event)">
+          <div class="theme-icon">
+            <img [src]="'https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/icons/' + theme.img" [alt]="theme.img">
+          </div>
+          <div class="theme-title">
+            {{theme.title}}
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" skipLocationChange routerDirection="root" [routerLink]="['/vocabulary']">
+    <ion-fab-button>
+      <ion-icon name="barbell-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
