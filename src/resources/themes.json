@@ -9,13 +9,13 @@
   [
     {
       "id": "2",
-      "title": "Datak",
-      "img": "calendar.png"
+      "title": "Zenbakia",
+      "img": "numbers.png"
     },
     {
       "id": "3",
-      "title": "Zenbakia",
-      "img": "numbers.png"
+      "title": "Datak",
+      "img": "calendar.png"
     }
   ],
   [
