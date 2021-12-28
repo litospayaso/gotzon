@@ -9,6 +9,7 @@ import { AppModule } from '@app/app.module';
 
 import { HomePage } from '@pages/home/home.page';
 import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
+import { LessonPage } from '@pages/lesson/lesson.page';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
   ],
   declarations: [
     HomePage,
-    VocabularyPage
+    VocabularyPage,
+    LessonPage
   ]
 })
 export class PagesModule {}

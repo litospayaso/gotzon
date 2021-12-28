@@ -4,7 +4,7 @@ import { RequestService } from '@services/request.service';
 import { LessonsInterface } from '@app/interfaces/lessons.interface';
 import { PopoverController } from '@ionic/angular';
 import { ThemePopoverComponent } from '@components/theme-popover/theme-popover.component';
-import { TypeScriptEmitter } from '@angular/compiler';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,7 @@ export class HomePage implements AfterViewInit {
   public themes: LessonsInterface[][] = [];
 
   constructor(
+    private router: Router,
     public requestService: RequestService,
     public loadingController: LoadingController,
     public popoverController: PopoverController
@@ -44,6 +45,12 @@ export class HomePage implements AfterViewInit {
       showBackdrop: false
     });
     await popover.present();
+
+    const {data} = await popover.onDidDismiss();
+    console.log('onDidDismiss resolved with role', data.route);
+    if (data.route) {
+      this.router.navigate([data.route], {skipLocationChange: true });
+    }
   }
 
 }

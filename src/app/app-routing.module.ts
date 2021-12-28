@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomePage } from '@pages/home/home.page';
 import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
+import { LessonPage } from '@pages/lesson/lesson.page';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'vocabulary',
     component: VocabularyPage,
+  },
+  {
+    path: 'lesson/:id',
+    component: LessonPage,
   },
 ];
 
