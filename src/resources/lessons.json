@@ -2,25 +2,51 @@
   [
     {
       "id": "1",
+      "title": "Introducción",
+      "img": "doorway.png"
+    }
+  ],
+  [
+    {
+      "id": "2",
+      "title": "IZAN",
+      "img": "avatar.png"
+    }
+  ],
+  [
+    {
+      "id": "3",
+      "title": "Artículos",
+      "img": "apple.png"
+    },
+    {
+      "id": "4",
+      "title": "Demostrativos",
+      "img": "nature.png"
+    }
+  ],
+  [
+    {
+      "id": "5",
       "title": "Agurrak",
       "img": "goodbye.png"
     }
   ],
   [
     {
-      "id": "2",
+      "id": "6",
       "title": "Zenbakia",
       "img": "numbers.png"
     },
     {
-      "id": "3",
+      "id": "7",
       "title": "Datak",
       "img": "calendar.png"
     }
   ],
   [
     {
-      "id": "4",
+      "id": "8",
       "title": "NOR Kasua",
       "img": "problem.png"
     }
