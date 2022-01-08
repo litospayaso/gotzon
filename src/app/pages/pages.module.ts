@@ -5,11 +5,10 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { AppModule } from '@app/app.module';
-
 import { HomePage } from '@pages/home/home.page';
 import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
 import { LessonPage } from '@pages/lesson/lesson.page';
+import { ExercisesPage } from '@pages/exercises/exercises.page';
 
 @NgModule({
   imports: [
@@ -22,7 +21,8 @@ import { LessonPage } from '@pages/lesson/lesson.page';
   declarations: [
     HomePage,
     VocabularyPage,
-    LessonPage
+    LessonPage,
+    ExercisesPage
   ]
 })
 export class PagesModule {}

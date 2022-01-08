@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomePage } from '@pages/home/home.page';
 import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
 import { LessonPage } from '@pages/lesson/lesson.page';
+import { ExercisesPage } from '@pages/exercises/exercises.page';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'lesson/:id',
     component: LessonPage,
+  },
+  {
+    path: 'exercises/:id',
+    component: ExercisesPage,
   },
 ];
 

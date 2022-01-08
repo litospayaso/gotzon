@@ -8,17 +8,9 @@
     </ion-toolbar>
   </ion-header>
   
-  <div class="container"> 
-    <!-- <div class="lateral-menu">
-      <ion-list *ngFor="let page of appPages">
-        <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-          <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
-          {{page.title}}
-        </ion-item>
-      </ion-list>
-    </div> -->
+  <ion-content [fullscreen]="true" [forceOverscroll​]="true"> 
     <div class="outlet-container" [ngClass]="title">
       <ion-router-outlet class="outlet-elem"></ion-router-outlet>
     </div>
-  </div>  
+  </ion-content>  
 </ion-app>

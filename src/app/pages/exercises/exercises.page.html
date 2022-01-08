@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true" (keypress)="onKeyPress($event)">
+  <div class="page-container">
+    <ion-card>
+      <ion-card-content *ngIf="current">
+        {{current.spanish}}
+      </ion-card-content>
+    </ion-card>
+    <!-- Default textarea -->
+    <ion-item>
+      <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea>
+    </ion-item>
+
+    <div *ngIf="isCorrecting" class="evaluation" [ngClass]="evaluationClass">
+      {{isCorrecting}}
+    </div>
+
+    <div class="buttons-container">
+      <ion-button expand="block" *ngIf="!isCorrecting" (click)="checkResponse()">Zuzendu</ion-button>
+      <ion-button expand="block" *ngIf="isCorrecting" (click)="continue()">Jarraitu</ion-button>
+    </div>
+  </div>
+</ion-content>

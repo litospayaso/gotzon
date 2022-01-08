@@ -34,8 +34,9 @@ export class AppComponent {
     });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
-      const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
+      let rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
       storage.set('lastRoute', rootToSave);
+      rootToSave = decodeURIComponent(rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'home':
@@ -47,7 +48,7 @@ export class AppComponent {
           this.pageBack = '';
           break;
         case 'lesson':
-          this.title = `Gaia: ${rootToSave.split('title%3D').pop()}`;
+          this.title = `Gaia: ${(rootToSave.split('title=').pop())}`;
           this.pageBack = '/home';
           break;
         default:

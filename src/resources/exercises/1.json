@@ -1,0 +1,23 @@
+[
+  {
+    "question":"yo",
+    "answer": ["ni"],
+    "type": "euskera"
+  },
+  {
+    "question":"zu",
+    "answer": ["tú"],
+    "type": "gaztelania"
+  },
+  {
+    "question":"nosotros",
+    "options": ["haiek","zu","gu"],
+    "answer": ["gu"],
+    "type": "option"
+  },
+  {
+    "question":"11",
+    "answer": ["kaixo"],
+    "type": "audio"
+  }
+]
