@@ -35,8 +35,8 @@ export class AppComponent {
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
       let rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
-      storage.set('lastRoute', rootToSave);
       rootToSave = decodeURIComponent(rootToSave);
+      storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'home':
@@ -49,6 +49,10 @@ export class AppComponent {
           break;
         case 'lesson':
           this.title = `Gaia: ${(rootToSave.split('title=').pop())}`;
+          this.pageBack = '/home';
+          break;
+        case 'exercises':
+          this.title = `Ariketak: ${(rootToSave.split('title=').pop())}`;
           this.pageBack = '/home';
           break;
         default:

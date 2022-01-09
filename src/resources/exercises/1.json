@@ -1,22 +1,26 @@
 [
   {
+    "id":"1.1",
     "question":"yo",
     "answer": ["ni"],
     "type": "euskera"
   },
   {
+    "id":"1.2",
     "question":"zu",
     "answer": ["tú"],
     "type": "gaztelania"
   },
   {
+    "id":"1.3",
     "question":"nosotros",
     "options": ["haiek","zu","gu"],
     "answer": ["gu"],
     "type": "option"
   },
   {
-    "question":"11",
+    "id":"1.4",
+    "question":"1-1",
     "answer": ["kaixo"],
     "type": "audio"
   }

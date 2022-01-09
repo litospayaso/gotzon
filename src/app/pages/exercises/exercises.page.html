@@ -1,10 +1,25 @@
 <ion-content [fullscreen]="true" (keypress)="onKeyPress($event)">
   <div class="page-container">
-    <ion-card>
-      <ion-card-content *ngIf="current">
-        {{current.spanish}}
+    <div class="percent-complete"><span [style.width]="completePercent"></span></div>
+
+    <ion-card *ngIf="current && current.type !== 'audio'">
+      <ion-card-content>
+        {{current.question}}
       </ion-card-content>
     </ion-card>
+
+    <div *ngIf="current && current.type === 'audio'">
+      <div class="audio-container">
+        <button mat-stroked-button class="play-button" (click)="playMedia()">
+          <ion-icon name="play-outline"></ion-icon>
+        </button>
+        <h2>Escucha y escribe</h2>
+      </div>
+      <audio controls="controls" id="audioTag" preload="none" autoplay>
+        <source [src]="audio" type="audio/mpeg"></audio>
+    </div>
+
+
     <!-- Default textarea -->
     <ion-item>
       <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea>
