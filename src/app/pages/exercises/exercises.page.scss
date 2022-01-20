@@ -58,8 +58,16 @@
       margin-right: 16px;
     }
   }
+  audio {
+    visibility: hidden;
+    height: 0px;
+  }
 
   .buttons-container {
     margin-top: auto;
+  }
+
+  .zorionak-picture {
+    text-align: center;
   }
 }

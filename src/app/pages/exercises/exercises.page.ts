@@ -18,8 +18,10 @@ export class ExercisesPage implements AfterViewInit {
   public current: ExerciseInterface;
   public lessonId: string;
   public exercises: ExerciseInterface[];
-  public completePercent = '20%';
+  public completePercent = '0%';
   public audio = '';
+  public totalExercises: number;
+  public congratulations = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -39,6 +41,7 @@ export class ExercisesPage implements AfterViewInit {
       this.lessonId = id;
       this.requestService.getExercises(this.lessonId).subscribe(data => {
         this.exercises = data;
+        this.totalExercises = this.exercises.length;
         loader.dismiss();
         this.setCurrent();
       });
@@ -46,16 +49,22 @@ export class ExercisesPage implements AfterViewInit {
   }
 
   private setCurrent() {
+    if (this.exercises.length === 0) {
+      this.lessonComplete();
+    }
     this.current = this.exercises.sort(() => Math.random() - 0.5).pop();
     console.log(`%c this.current`, `background: #df03fc; color: #f8fc03`, this.current);
     this.response = '';
     this.isCorrecting = '';
     if (this.current.type === 'audio') {
-      this.audio = `https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/audio/${this.current.question}.json`;
+      this.audio = `https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/audio/${this.current.question}.mp3`;
       const audioTag = document.getElementById('audioTag') as HTMLAudioElement;
       if (audioTag) {
         audioTag.load();
       }
+    }
+    if (this.current.type === 'option') {
+      this.current.options = this.current.options.sort(() => Math.random() - 0.5);
     }
   }
 
@@ -65,6 +74,7 @@ export class ExercisesPage implements AfterViewInit {
     if (correct){
       this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() =>  Math.random() - 0.5 ).pop();
       this.evaluationClass = 'correct';
+      this.completePercent = ((this.totalExercises - this.exercises.length) * 100 / this.totalExercises) + '%';
     }else{
       this.isCorrecting = `Akats: ${this.current.answer[0]}`;
       this.evaluationClass = 'error';
@@ -72,22 +82,47 @@ export class ExercisesPage implements AfterViewInit {
   }
 
   public continue() {
-    let correct = false;
-    this.current.answer.forEach(e => correct = correct || this.correction.compareStrings(this.response ? this.response : '' , e));
-    if (!correct) {
+    if (this.evaluationClass === 'error') {
       this.exercises.push(this.current);
+      this.isCorrecting = null;
+      this.response = '';
+      this.setCurrent();
+    } else {
+      if (this.exercises.length > 0) {
+        this.isCorrecting = null;
+        this.response = '';
+        this.setCurrent();
+      } else {
+        this.lessonComplete();
+      }
     }
-    this.setCurrent();
   }
 
   public onKeyPress(event) {
     if (event.keyCode === 13) {
+      event.preventDefault();
+      console.log(`%c keyPress!!!`, `background: #df03fc; color: #f8fc03`);
+      console.log(`%c this.isCorrecting`, `background: #df03fc; color: #f8fc03`, this.isCorrecting);
       if (this.isCorrecting) {
         this.continue();
       } else {
         this.checkResponse();
       }
     }
+  }
+
+  public lessonComplete() {
+    this.congratulations = true;
+    this.completePercent = '100%';
+    // const val = localStorage.getItem('lessonPassed');
+    // let cookie;
+    // if (val) {
+    //   cookie = JSON.parse(val);
+    // } else {
+    //   cookie = [];
+    // }
+    // cookie.push(this.lesson);
+    // localStorage.setItem('lessonPassed', JSON.stringify(cookie));
   }
 
   public playMedia() {

@@ -1,5 +1,5 @@
-<ion-content [fullscreen]="true" (keypress)="onKeyPress($event)">
-  <div class="page-container">
+<ion-content [fullscreen]="true" (keyUp)="onKeyPress($event)">
+  <div class="page-container" *ngIf="!congratulations">
     <div class="percent-complete"><span [style.width]="completePercent"></span></div>
 
     <ion-card *ngIf="current && current.type !== 'audio'">
@@ -16,14 +16,25 @@
         <h2>Escucha y escribe</h2>
       </div>
       <audio controls="controls" id="audioTag" preload="none" autoplay>
-        <source [src]="audio" type="audio/mpeg"></audio>
+        <source [src]="audio" type="audio/mpeg">
+      </audio>
     </div>
 
 
     <!-- Default textarea -->
-    <ion-item>
+    <ion-item *ngIf="current && current.type !== 'option'">
       <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea>
     </ion-item>
+
+    <ion-list *ngIf="current && current.type === 'option'">
+      <ion-radio-group [(ngModel)]="response">
+        <ion-item *ngFor="let option of current.options">
+          <ion-label>{{option}}</ion-label>
+          <ion-radio slot="start" [value]="option"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <!-- <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea> -->
 
     <div *ngIf="isCorrecting" class="evaluation" [ngClass]="evaluationClass">
       {{isCorrecting}}
@@ -32,6 +43,16 @@
     <div class="buttons-container">
       <ion-button expand="block" *ngIf="!isCorrecting" (click)="checkResponse()">Zuzendu</ion-button>
       <ion-button expand="block" *ngIf="isCorrecting" (click)="continue()">Jarraitu</ion-button>
+    </div>
+  </div>
+
+  <div class="page-container" *ngIf="congratulations">
+    <div class="zorionak-picture">
+      <img src="img/icons/congratulations.png">
+    </div>
+    <div class="correct">¡Has completado correctamente la lección!</div>
+    <div class="buttons-container">
+      <ion-button expand="block" [routerLink]="['/home']" routerDirection="root" skipLocationChange>Volver</ion-button>
     </div>
   </div>
 </ion-content>
