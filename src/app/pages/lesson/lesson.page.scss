@@ -1,6 +1,40 @@
 .page-container {
   padding: 50px 20px 0 20px;
 }
-table {
-  
+
+::ng-deep {
+  table {
+    thead {
+      td:first-child {
+        border-radius: 16px 0 0 0;
+      }
+      td:last-child {
+        border-radius: 0 16px 0 0;
+      }
+      td {
+        background-color: var(--ion-color-primary) !important;
+        font-weight: bold;
+        padding: 10px 12px;
+        color: white;
+      }
+    }
+    tbody {
+      td:first-child {
+        border-left: 2px solid #e5e5e5;
+      }
+      td {
+        border-bottom: 2px solid #e5e5e5;
+        border-right: 2px solid #e5e5e5;
+        padding: 10px 12px;
+      }
+      tr:last-child {
+        td:first-child {
+          border-radius: 0 0 0 16px;
+        }
+        td:last-child {
+          border-radius: 0 16px 0 0;
+        }
+      }
+    }
+  }
 }
