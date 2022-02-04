@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 import { RequestService } from '@services/request.service';
+import { UserService } from '@services/user.service';
 
 @Component({
   selector: 'app-lesson',
@@ -14,7 +15,8 @@ export class LessonPage implements AfterViewInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     public loadingController: LoadingController,
-    public requestService: RequestService
+    public requestService: RequestService,
+    public userService: UserService
   ){
   }
 
@@ -29,6 +31,7 @@ export class LessonPage implements AfterViewInit {
       this.requestService.getLesson(id).subscribe(data => {
         this.lesson = data;
         loader.dismiss();
+        this.userService.setLessonCompleted(Number(id));
       });
     });
   }

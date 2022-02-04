@@ -4,7 +4,7 @@
     <div *ngFor="let row of themes; let i = index" class="theme">
       <div class="row-theme" [id]="index">
         <div *ngFor="let theme of row" class="theme-element" (click)="openTheme(theme, $event)">
-          <div class="theme-icon">
+          <div class="theme-icon" [ngClass]="theme.complete">
             <img [src]="'https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/icons/' + theme.img" [alt]="theme.img">
           </div>
           <div class="theme-title">

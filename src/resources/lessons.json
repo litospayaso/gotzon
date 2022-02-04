@@ -3,59 +3,86 @@
     {
       "id": "1",
       "title": "Introducción",
-      "img": "doorway.png"
+      "img": "doorway.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ],
   [
     {
       "id": "2",
       "title": "IZAN",
-      "img": "avatar.png"
+      "img": "avatar.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ],
   [
     {
       "id": "3",
       "title": "NOR - NONGOA",
-      "img": "place.png"
+      "img": "place.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ],
   [
     {
       "id": "4",
       "title": "Artículos",
-      "img": "apple.png"
+      "img": "apple.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     },
     {
       "id": "5",
       "title": "Demostrativos",
-      "img": "nature.png"
+      "img": "nature.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ],
   [
     {
       "id": "6",
       "title": "Agurrak",
-      "img": "goodbye.png"
+      "img": "goodbye.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ],
   [
     {
       "id": "7",
       "title": "Zenbakia",
-      "img": "numbers.png"
+      "img": "numbers.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     },
     {
       "id": "8",
       "title": "Datak",
-      "img": "calendar.png"
+      "img": "calendar.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ],
   [
     {
       "id": "9",
       "title": "NOR Kasua",
-      "img": "problem.png"
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
     }
   ]
 ]

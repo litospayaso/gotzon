@@ -4,7 +4,9 @@ import { RequestService } from '@services/request.service';
 import { LessonsInterface } from '@app/interfaces/lessons.interface';
 import { PopoverController } from '@ionic/angular';
 import { ThemePopoverComponent } from '@components/theme-popover/theme-popover.component';
+import { UserService } from '@services/user.service';
 import { Router } from '@angular/router';
+import { cpuUsage } from 'process';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,8 @@ export class HomePage implements AfterViewInit {
     private router: Router,
     public requestService: RequestService,
     public loadingController: LoadingController,
-    public popoverController: PopoverController
+    public popoverController: PopoverController,
+    public userService: UserService
   ){}
 
   async ngAfterViewInit() {
@@ -28,6 +31,40 @@ export class HomePage implements AfterViewInit {
     });
     loader.present();
     this.requestService.getLessons().subscribe(themes => {
+      const userData = this.userService.getUserData();
+      themes.forEach(theme => {
+        theme.forEach(e => {
+          const userThemeData = userData[Number(e.id)];
+          console.log(`%c userThemeData`, `background: #df03fc; color: #f8fc03`, userThemeData);
+          if (userThemeData === undefined) {
+            e.complete = 'zero';
+          } else {
+            e.complete = 'zero';
+            let toComplete = 0;
+            toComplete += e.exercises ? 1 : 0;
+            toComplete += e.lesson ? 1 : 0;
+            toComplete += e.vocabulary ? 1 : 0;
+            console.log(`%c toComplete`, `background: #df03fc; color: #f8fc03`, toComplete);
+            let completed = 0;
+            completed += userThemeData.exercises ? 1 : 0;
+            completed += userThemeData.lesson ? 1 : 0;
+            completed += userThemeData.vocabulary ? 1 : 0;
+            const percent = (completed / toComplete) * 100;
+            if (percent > 30 && percent < 50) {
+              e.complete = 'third';
+            }
+            if (percent > 49  && percent < 65) {
+              e.complete = 'half';
+            }
+            if (percent > 64  && percent < 99) {
+              e.complete = 'two-third';
+            }
+            if (percent === 100) {
+              e.complete = 'completed';
+            }
+          }
+        });
+      });
       this.themes = themes;
       loader.dismiss();
     });
