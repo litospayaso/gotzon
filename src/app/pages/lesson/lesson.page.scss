@@ -4,14 +4,17 @@
 
 ::ng-deep {
   table {
+    margin-right: auto;
+    margin-left: auto;
     border-collapse: separate !important;
+
     th:first-child {
       border-radius: 16px 0 0 0;
     }
     th:last-child {
       border-radius: 0 16px 0 0;
     }
-    td {
+    th {
       background-color: var(--ion-color-primary) !important;
       font-weight: bold;
       padding: 10px 12px;
