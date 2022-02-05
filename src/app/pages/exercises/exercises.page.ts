@@ -4,6 +4,7 @@ import { CorrectionService } from '@services/correction.service';
 import { LoadingController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 import { ExerciseInterface } from '@app/interfaces/exercise.interface';
+import { UserService } from '@services/user.service';
 
 @Component({
   selector: 'app-exercises',
@@ -28,6 +29,7 @@ export class ExercisesPage implements AfterViewInit {
     public loadingController: LoadingController,
     private requestService: RequestService,
     private correction: CorrectionService,
+    private userService: UserService
   ) {}
 
   async ngAfterViewInit() {
@@ -53,7 +55,6 @@ export class ExercisesPage implements AfterViewInit {
       this.lessonComplete();
     }
     this.current = this.exercises.sort(() => Math.random() - 0.5).pop();
-    console.log(`%c this.current`, `background: #df03fc; color: #f8fc03`, this.current);
     this.response = '';
     this.isCorrecting = '';
     if (this.current.type === 'audio') {
@@ -101,8 +102,6 @@ export class ExercisesPage implements AfterViewInit {
   public onKeyPress(event) {
     if (event.keyCode === 13) {
       event.preventDefault();
-      console.log(`%c keyPress!!!`, `background: #df03fc; color: #f8fc03`);
-      console.log(`%c this.isCorrecting`, `background: #df03fc; color: #f8fc03`, this.isCorrecting);
       if (this.isCorrecting) {
         this.continue();
       } else {
@@ -114,15 +113,7 @@ export class ExercisesPage implements AfterViewInit {
   public lessonComplete() {
     this.congratulations = true;
     this.completePercent = '100%';
-    // const val = localStorage.getItem('lessonPassed');
-    // let cookie;
-    // if (val) {
-    //   cookie = JSON.parse(val);
-    // } else {
-    //   cookie = [];
-    // }
-    // cookie.push(this.lesson);
-    // localStorage.setItem('lessonPassed', JSON.stringify(cookie));
+    this.userService.setExercisesCompleted(Number(this.lessonId));
   }
 
   public playMedia() {

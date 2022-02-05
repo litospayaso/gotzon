@@ -5,8 +5,8 @@ import { LessonsInterface } from '@app/interfaces/lessons.interface';
 import { PopoverController } from '@ionic/angular';
 import { ThemePopoverComponent } from '@components/theme-popover/theme-popover.component';
 import { UserService } from '@services/user.service';
-import { Router } from '@angular/router';
-import { cpuUsage } from 'process';
+import { Router, ResolveEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +23,15 @@ export class HomePage implements AfterViewInit {
     public loadingController: LoadingController,
     public popoverController: PopoverController,
     public userService: UserService
-  ){}
+  ){
+    this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
+      const root: ResolveEnd = event as ResolveEnd;
+      if (root.url === '/home') {
+        console.log(`%c event`, `background: #df03fc; color: #f8fc03`, event);
+        this.calculateComplete();
+      }
+    });
+  }
 
   async ngAfterViewInit() {
     const loader = await this.loadingController.create({
@@ -31,42 +39,44 @@ export class HomePage implements AfterViewInit {
     });
     loader.present();
     this.requestService.getLessons().subscribe(themes => {
-      const userData = this.userService.getUserData();
-      themes.forEach(theme => {
-        theme.forEach(e => {
-          const userThemeData = userData[Number(e.id)];
-          console.log(`%c userThemeData`, `background: #df03fc; color: #f8fc03`, userThemeData);
-          if (userThemeData === undefined) {
-            e.complete = 'zero';
-          } else {
-            e.complete = 'zero';
-            let toComplete = 0;
-            toComplete += e.exercises ? 1 : 0;
-            toComplete += e.lesson ? 1 : 0;
-            toComplete += e.vocabulary ? 1 : 0;
-            console.log(`%c toComplete`, `background: #df03fc; color: #f8fc03`, toComplete);
-            let completed = 0;
-            completed += userThemeData.exercises ? 1 : 0;
-            completed += userThemeData.lesson ? 1 : 0;
-            completed += userThemeData.vocabulary ? 1 : 0;
-            const percent = (completed / toComplete) * 100;
-            if (percent > 30 && percent < 50) {
-              e.complete = 'third';
-            }
-            if (percent > 49  && percent < 65) {
-              e.complete = 'half';
-            }
-            if (percent > 64  && percent < 99) {
-              e.complete = 'two-third';
-            }
-            if (percent === 100) {
-              e.complete = 'completed';
-            }
-          }
-        });
-      });
       this.themes = themes;
+      this.calculateComplete();
       loader.dismiss();
+    });
+  }
+
+  private calculateComplete() {
+    const userData = this.userService.getUserData();
+    this.themes.forEach(theme => {
+      theme.forEach(e => {
+        const userThemeData = userData[Number(e.id)];
+        if (userThemeData === undefined) {
+          e.complete = 'zero';
+        } else {
+          e.complete = 'zero';
+          let toComplete = 0;
+          toComplete += e.exercises ? 1 : 0;
+          toComplete += e.lesson ? 1 : 0;
+          toComplete += e.vocabulary ? 1 : 0;
+          let completed = 0;
+          completed += userThemeData.exercises ? 1 : 0;
+          completed += userThemeData.lesson ? 1 : 0;
+          completed += userThemeData.vocabulary ? 1 : 0;
+          const percent = (completed / toComplete) * 100;
+          if (percent > 30 && percent < 50) {
+            e.complete = 'third';
+          }
+          if (percent > 49  && percent < 65) {
+            e.complete = 'half';
+          }
+          if (percent > 64  && percent < 99) {
+            e.complete = 'two-third';
+          }
+          if (percent === 100) {
+            e.complete = 'completed';
+          }
+        }
+      });
     });
   }
 

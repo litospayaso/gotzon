@@ -1,5 +1,5 @@
 .page-container {
-  padding: 58px 2% 0 2% !important;
+  padding: 78px 2% 0 2% !important;
 
   .percent-complete {
     position: relative;
@@ -48,14 +48,17 @@
     align-items: center;
 
     .play-button {
-      height: 35px;
-      width: 35px !important;
+      // height: 35px;
+      // width: 35px !important;
       min-width: unset;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #4c4c4c;
       margin-right: 16px;
+      button {
+        padding: 0;
+      }
     }
   }
   audio {

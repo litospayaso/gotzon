@@ -10,9 +10,9 @@
 
     <div *ngIf="current && current.type === 'audio'">
       <div class="audio-container">
-        <button mat-stroked-button class="play-button" (click)="playMedia()">
+        <ion-button (click)="playMedia()" class="play-button">
           <ion-icon name="play-outline"></ion-icon>
-        </button>
+        </ion-button>
         <h2>Escucha y escribe</h2>
       </div>
       <audio controls="controls" id="audioTag" preload="none" autoplay>
@@ -52,7 +52,7 @@
     </div>
     <div class="correct">¡Has completado correctamente la lección!</div>
     <div class="buttons-container">
-      <ion-button expand="block" [routerLink]="['/home']" routerDirection="root" skipLocationChange>Volver</ion-button>
+      <ion-button expand="block" [routerLink]="['/home']" routerDirection="root" skipLocationChange>Volver (Etorri)</ion-button>
     </div>
   </div>
 </ion-content>

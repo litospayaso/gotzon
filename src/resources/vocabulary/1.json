@@ -1,0 +1,74 @@
+[
+  {
+    "spanish": [
+      "Yo"
+    ],
+    "euskaraz": [
+      "Ni"
+    ],
+    "tags": [
+      "Izenordainak"
+    ]
+  },
+  {
+    "spanish": [
+      "Tú"
+    ],
+    "euskaraz": [
+      "Zu",
+      "Hi"
+    ],
+    "tags": [
+      "Izenordainak"
+    ]
+  },
+  {
+    "spanish": [
+      "Él",
+      "Ella"
+    ],
+    "euskaraz": [
+      "Hura",
+      "Bera"
+    ],
+    "tags": [
+      "Izenordainak"
+    ]
+  },
+  {
+    "spanish": [
+      "Nosotros",
+      "Nosotras"
+    ],
+    "euskaraz": [
+      "Gu"
+    ],
+    "tags": [
+      "Izenordainak"
+    ]
+  },
+  {
+    "spanish": [
+      "Vosotros",
+      "Vosotras"
+    ],
+    "euskaraz": [
+      "Zuek"
+    ],
+    "tags": [
+      "Izenordainak"
+    ]
+  },
+  {
+    "spanish": [
+      "Ellos",
+      "Ellas"
+    ],
+    "euskaraz": [
+      "Haiek"
+    ],
+    "tags": [
+      "Izenordainak"
+    ]
+  }
+]
