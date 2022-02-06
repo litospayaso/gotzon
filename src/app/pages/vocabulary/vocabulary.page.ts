@@ -114,10 +114,8 @@ export class VocabularyPage implements AfterViewInit {
     if (event.keyCode === 13) {
       event.preventDefault();
       if (this.isCorrecting && this.isCorrecting.length > 0) {
-        console.log(`%c continue`, `background: #df03fc; color: #f8fc03`);
         this.continue();
       } else {
-        console.log(`%c response`, `background: #df03fc; color: #f8fc03`);
         this.checkResponse();
       }
     }

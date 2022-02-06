@@ -27,7 +27,6 @@ export class HomePage implements AfterViewInit {
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
       if (root.url === '/home') {
-        console.log(`%c event`, `background: #df03fc; color: #f8fc03`, event);
         this.calculateComplete();
       }
     });

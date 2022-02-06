@@ -59,6 +59,11 @@
           border-color: var(--ion-color-success-tint);
         }
       }
+      .completed-container {
+        height: 0;
+        width: 0;
+        
+      }
       .theme-title{
         display: flex;
         align-items: center;
