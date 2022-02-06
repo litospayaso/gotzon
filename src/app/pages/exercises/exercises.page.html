@@ -23,7 +23,7 @@
 
     <!-- Default textarea -->
     <ion-item *ngIf="current && current.type !== 'option'">
-      <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea>
+      <ion-textarea [(ngModel)]="response"></ion-textarea>
     </ion-item>
 
     <ion-list *ngIf="current && current.type === 'option'">

@@ -16,7 +16,7 @@
         background-color: transparent;
         height: 0;
 
-        &.zero, &.complete {
+        &.zero, &.completed {
           svg {
             display: none;
           }
@@ -55,7 +55,7 @@
         align-items: center;
         justify-content: center;
 
-        &.complete {
+        &.completed {
           border-color: var(--ion-color-success-tint);
         }
       }

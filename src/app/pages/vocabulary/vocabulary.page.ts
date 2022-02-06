@@ -1,7 +1,11 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { VocabularyInterface } from '@app/interfaces/vocabulary.interface';
 import { RequestService } from '@services/request.service';
-import vocabulary from '@resources/vocabulary.json';
+// import vocabulary from '@resources/vocabulary.json';
+import { CorrectionService } from '@app/services/correction.service';
+import { LoadingController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
+import { UserService } from '@app/services/user.service';
 
 @Component({
   selector: 'app-vocabulary',
@@ -14,86 +18,115 @@ export class VocabularyPage implements AfterViewInit {
   public isCorrecting: string;
   public evaluationClass: string;
   public current: VocabularyInterface;
+  public congratulations = false;
+  public vocabulary: VocabularyInterface[];
+  public totalVocabulary: number;
+  public completePercent: string;
+  private lessonId: string;
 
 
   constructor(
     private requestService: RequestService,
-  ) {}
+    private correction: CorrectionService,
+    public loadingController: LoadingController,
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService
+  ) { }
 
-  ngAfterViewInit() {
-    this.setCurrent();
+  async ngAfterViewInit() {
+
+    const loader = await this.loadingController.create({
+      message: 'Cargando...'
+    });
+    loader.present();
+    this.activatedRoute.params.subscribe(params => {
+      let { id } = params;
+      if (id) {
+        id = id.split('?')[0];
+        this.lessonId = id;
+        this.requestService.getVocabularyFromLesson(this.lessonId).subscribe(data => {
+          this.vocabulary = data;
+          this.totalVocabulary = this.vocabulary.length;
+          loader.dismiss();
+          this.setCurrent();
+        });
+      } else {
+        this.requestService.getVocabulary().subscribe(data => {
+          this.vocabulary = data;
+        });
+      }
+    });
+
+    // this.setCurrent();
   }
 
   private setCurrent() {
-    this.current = vocabulary.sort(() => Math.random() - 0.5).pop();
+    if (this.vocabulary.length === 0) {
+      this.lessonComplete();
+    }
+    this.current = this.vocabulary.sort(() => Math.random() - 0.5).pop();
     this.response = '';
     this.isCorrecting = '';
   }
 
   public checkResponse() {
     let correct = false;
-    this.current.euskaraz.forEach(e => correct = correct || this.compareStrings(this.response ? this.response : '' , e));
-    if (correct){
-      this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() =>  Math.random() - 0.5 ).pop();
+    this.current.euskaraz.forEach(e => correct = correct || this.correction.compareStrings(this.response ? this.response : '', e));
+    if (correct) {
+      this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() => Math.random() - 0.5).pop();
       this.evaluationClass = 'correct';
-    }else{
+      if (this.lessonId) {
+        this.completePercent = ((this.totalVocabulary - this.vocabulary.length) * 100 / this.totalVocabulary) + '%';
+      }
+    } else {
       this.isCorrecting = `Akats: ${this.current.euskaraz[0]}`;
       this.evaluationClass = 'error';
     }
   }
 
   public continue() {
-    let correct = false;
-    this.current.euskaraz.forEach(e => correct = correct || this.compareStrings(this.response ? this.response : '' , e));
-    if (!correct) {
-      vocabulary.push(this.current);
+    if (this.lessonId) {
+      if (this.evaluationClass === 'error') {
+        this.vocabulary.push(this.current);
+        this.isCorrecting = null;
+        this.response = '';
+        this.setCurrent();
+      } else {
+        if (this.vocabulary.length > 0) {
+          this.isCorrecting = null;
+          this.response = '';
+          this.setCurrent();
+        } else {
+          this.lessonComplete();
+        }
+      }
+    } else {
+      let correct = false;
+      this.current.euskaraz.forEach(e => correct = correct || this.correction.compareStrings(this.response ? this.response : '', e));
+      if (!correct) {
+        this.vocabulary.push(this.current);
+      }
+      this.setCurrent();
     }
-    this.setCurrent();
   }
 
   public onKeyPress(event) {
     if (event.keyCode === 13) {
-      if (this.isCorrecting) {
+      event.preventDefault();
+      if (this.isCorrecting && this.isCorrecting.length > 0) {
+        console.log(`%c continue`, `background: #df03fc; color: #f8fc03`);
         this.continue();
       } else {
+        console.log(`%c response`, `background: #df03fc; color: #f8fc03`);
         this.checkResponse();
       }
     }
   }
 
-  private compareStrings(str1, str2) {
-    let answer = str1;
-    let solution = str2;
-    if (answer === solution) {
-      return true;
-    }// removing punctuation marks:
-    // tslint:disable-next-line:max-line-length
-    answer = answer.replace(/[?=]|[¿=]|[!=]|[¡=]/gi, '').replace(/[, ]|[. ]/gi, ' ').replace(/[,]|[.]/gi, ' ').replace(/^(\s*)|(\s*)$/g, '').replace(/\s+/g, ' ');
-    solution = solution.replace(/[?=]|[¿=]|[!=]|[¡=]/gi, '').replace(/[, ]|[. ]/gi, ' ').replace(/[,]|[.]/gi, ' ').replace(/^(\s*)|(\s*)$/g, '').replace(/\s+/g, ' ');
-    if (answer === solution) {
-      return true;
-    }// removing capital letters:
-    answer = answer.toLowerCase();
-    solution = solution.toLowerCase();
-    if (answer === solution) {
-      return true;
-    }// removing accent mark:
-    answer = answer.replace(/á/g, 'a').replace(/é/g, 'e').replace(/í/g, 'i').replace(/ó/g, 'o').replace(/ú/g, 'u');
-    solution = solution.replace(/á/g, 'a').replace(/é/g, 'e').replace(/í/g, 'i').replace(/ó/g, 'o').replace(/ú/g, 'u');
-    if (answer === solution) {
-      return true;
-    }// removing quoutes:
-    answer = answer.replace(/"/g, '');
-    solution = solution.replace(/"/g, '');
-    if (answer === solution) {
-      return true;
-    }// removing white spaces at the beginning and at the end:
-    answer = answer.trim();
-    solution = solution.trim();
-    if (answer === solution) {
-      return true;
-    }// the answer is wrong
-    return false;
+  public lessonComplete() {
+    this.congratulations = true;
+    this.completePercent = '100%';
+    this.userService.setVocabularyCompleted(Number(this.lessonId));
   }
 
 }

@@ -8,7 +8,7 @@ import { ExercisesPage } from '@pages/exercises/exercises.page';
 const routes: Routes = [
   {
     path: '',
-    component: VocabularyPage,
+    component: HomePage,
   },
   {
     path: 'home',
@@ -16,6 +16,10 @@ const routes: Routes = [
   },
   {
     path: 'vocabulary',
+    component: VocabularyPage,
+  },
+  {
+    path: 'vocabulary/:id',
     component: VocabularyPage,
   },
   {

@@ -16,7 +16,7 @@ import appPages from '@resources/appPages.json';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  public title = '';
+  public title = 'Naia';
   public pageBack = '';
   public widthMenu = '0';
   public appPages = appPages;

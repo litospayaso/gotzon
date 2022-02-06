@@ -17,6 +17,11 @@ export class RequestService {
     return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/vocabulary.json`) as Observable<VocabularyInterface[]>;
   }
 
+  public getVocabularyFromLesson(id: string): Observable<VocabularyInterface[]> {
+    // tslint:disable-next-line: max-line-length
+    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/vocabulary/${id}.json`) as Observable<VocabularyInterface[]>;
+  }
+
   public getLessons(): Observable<LessonsInterface[][]> {
     // tslint:disable-next-line: max-line-length
     return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/lessons.json`) as Observable<LessonsInterface[][]>;
