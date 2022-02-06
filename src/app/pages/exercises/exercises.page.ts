@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { RequestService } from '@services/request.service';
 import { CorrectionService } from '@services/correction.service';
 import { LoadingController } from '@ionic/angular';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseInterface } from '@app/interfaces/exercise.interface';
 import { UserService } from '@services/user.service';
 
@@ -26,6 +26,7 @@ export class ExercisesPage implements AfterViewInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
+    private router: Router,
     public loadingController: LoadingController,
     private requestService: RequestService,
     private correction: CorrectionService,
@@ -46,6 +47,9 @@ export class ExercisesPage implements AfterViewInit {
         this.totalExercises = this.exercises.length;
         loader.dismiss();
         this.setCurrent();
+      }, (err) => {
+        loader.dismiss();
+        this.router.navigate(['/home'], {skipLocationChange: true });
       });
     });
   }

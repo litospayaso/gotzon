@@ -12,11 +12,12 @@
     .theme-element {
       cursor: pointer;
       margin: 0 25px;
-      .progress-container{
+      .progress-container {
         background-color: transparent;
         height: 0;
 
-        &.zero, &.completed {
+        &.zero,
+        &.completed {
           svg {
             display: none;
           }
@@ -24,7 +25,8 @@
         &.third {
           svg {
             transform: rotate(150deg);
-            g.two, g.three {
+            g.two,
+            g.three {
               display: none;
             }
           }
@@ -32,7 +34,8 @@
         &.half {
           svg {
             transform: rotate(150deg);
-            g.one, g.three {
+            g.one,
+            g.three {
               display: none;
             }
           }
@@ -40,14 +43,15 @@
         &.two-third {
           svg {
             transform: rotate(150deg);
-            g.one, g.two {
+            g.one,
+            g.two {
               display: none;
             }
           }
         }
       }
-      .theme-icon{
-        border: solid 8px #e5e5e5; 
+      .theme-icon {
+        border: solid 8px #e5e5e5;
         border-radius: 50%;
         height: 110px;
         width: 110px;
@@ -60,11 +64,17 @@
         }
       }
       .completed-container {
-        height: 0;
-        width: 0;
-        
+        display: none;
+        height: 0px;
+        width: 24px;
+        position: relative;
+        top: -22px;
+        left: 70px;
+        &.completed {
+          display: block;
+        }
       }
-      .theme-title{
+      .theme-title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,4 +88,3 @@
   margin-bottom: 15px;
   margin-right: 15px;
 }
-

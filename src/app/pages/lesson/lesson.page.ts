@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RequestService } from '@services/request.service';
 import { UserService } from '@services/user.service';
 
@@ -14,6 +14,7 @@ export class LessonPage implements AfterViewInit {
   public lesson = '';
   constructor(
     private activatedRoute: ActivatedRoute,
+    private router: Router,
     public loadingController: LoadingController,
     public requestService: RequestService,
     public userService: UserService
@@ -32,6 +33,9 @@ export class LessonPage implements AfterViewInit {
         this.lesson = data;
         loader.dismiss();
         this.userService.setLessonCompleted(Number(id));
+      }, (err) => {
+        loader.dismiss();
+        this.router.navigate(['/home'], {skipLocationChange: true });
       });
     });
   }

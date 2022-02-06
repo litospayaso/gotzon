@@ -10,6 +10,8 @@ import { VocabularyPage } from '@pages/vocabulary/vocabulary.page';
 import { LessonPage } from '@pages/lesson/lesson.page';
 import { ExercisesPage } from '@pages/exercises/exercises.page';
 
+import { ThemePopoverComponent } from '@app/components/theme-popover/theme-popover.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -19,6 +21,7 @@ import { ExercisesPage } from '@pages/exercises/exercises.page';
     IonicStorageModule.forRoot(),
   ],
   declarations: [
+    ThemePopoverComponent,
     HomePage,
     VocabularyPage,
     LessonPage,

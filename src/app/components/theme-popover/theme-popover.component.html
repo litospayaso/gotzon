@@ -1,8 +1,23 @@
 <div class="popover-container">
   <div class="title"> {{theme.title}}</div>
   <div class="buttons-container">
-    <ion-button [ngStyle]="{display: theme.lesson ? 'block' : 'none'}" expand="block" (click)="continue('/lesson/' + theme.id + '?title=' + theme.title)">Gaia (Tema)</ion-button>
-    <ion-button [ngStyle]="{display: theme.exercises ? 'block' : 'none'}" expand="block" (click)="continue('/exercises/' + theme.id + '?title=' + theme.title)">Ariketak (Ejercicios)</ion-button>
-    <ion-button [ngStyle]="{display: theme.vocabulary ? 'block' : 'none'}" expand="block" (click)="continue('/vocabulary/' + theme.id + '?title=' + theme.title)">Hiztegia (vocabulario)</ion-button>
+    <ion-button *ngIf="theme.lesson" expand="block"
+      (click)="continue('/lesson/' + theme.id + '?title=' + theme.title)">Gaia (Tema)
+      <span class="image-container" *ngIf="userData.lesson"> <img
+          src="https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/icons/favourite.png" alt="star">
+      </span>
+    </ion-button>
+    <ion-button *ngIf="theme.exercises" expand="block"
+      (click)="continue('/exercises/' + theme.id + '?title=' + theme.title)">Ariketak (Ejercicios) <span
+        class="image-container" *ngIf="userData.exercises"> <img
+          src="https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/icons/favourite.png" alt="star">
+      </span>
+    </ion-button>
+    <ion-button *ngIf="theme.vocabulary" expand="block"
+      (click)="continue('/vocabulary/' + theme.id + '?title=' + theme.title)">Hiztegia (vocabulario) <span
+        class="image-container" *ngIf="userData.vocabulary"> <img
+          src="https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/icons/favourite.png" alt="star">
+      </span>
+    </ion-button>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { UserDataInterface } from '@app/interfaces/userdata.interface';
+import { UserData, UserDataInterface } from '@app/interfaces/userdata.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +26,15 @@ export class UserService {
   public getUserData(): UserDataInterface {
     const result = JSON.parse(JSON.stringify(this.userData));
     return result;
+  }
+
+  public getUserThemeData(id: number): UserData {
+    const result = {
+      lesson: false,
+      exercises: false,
+      vocabulary: false
+    } as UserData;
+    return this.userData[id] ? this.userData[id] : result;
   }
 
   public setUserData(data: UserDataInterface) {

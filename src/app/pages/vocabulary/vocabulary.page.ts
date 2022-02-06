@@ -4,7 +4,7 @@ import { RequestService } from '@services/request.service';
 // import vocabulary from '@resources/vocabulary.json';
 import { CorrectionService } from '@app/services/correction.service';
 import { LoadingController } from '@ionic/angular';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '@app/services/user.service';
 
 @Component({
@@ -28,6 +28,7 @@ export class VocabularyPage implements AfterViewInit {
   constructor(
     private requestService: RequestService,
     private correction: CorrectionService,
+    private router: Router,
     public loadingController: LoadingController,
     private activatedRoute: ActivatedRoute,
     private userService: UserService
@@ -49,6 +50,9 @@ export class VocabularyPage implements AfterViewInit {
           this.totalVocabulary = this.vocabulary.length;
           loader.dismiss();
           this.setCurrent();
+        }, (err) => {
+          loader.dismiss();
+          this.router.navigate(['/home'], {skipLocationChange: true });
         });
       } else {
         this.requestService.getVocabulary().subscribe(data => {
