@@ -6,7 +6,7 @@
       "img": "doorway.png",
       "lesson": true,
       "vocabulary": true,
-      "exercises": true
+      "exercises": false
     }
   ],
   [
@@ -15,7 +15,7 @@
       "title": "IZAN",
       "img": "avatar.png",
       "lesson": true,
-      "vocabulary": true,
+      "vocabulary": false,
       "exercises": true
     }
   ],
@@ -25,7 +25,7 @@
       "title": "NOR - NONGOA",
       "img": "place.png",
       "lesson": true,
-      "vocabulary": true,
+      "vocabulary": false,
       "exercises": true
     }
   ],

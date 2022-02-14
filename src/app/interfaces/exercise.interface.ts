@@ -4,4 +4,5 @@ export interface ExerciseInterface {
   answer: string[];
   type: string;
   options?: string[];
+  translation?: string;
 }
