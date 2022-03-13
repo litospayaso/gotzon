@@ -45,7 +45,7 @@ export class AppComponent {
           break;
         case 'vocabulary':
           this.title = 'Hiztegia (vocabulario)';
-          this.pageBack = '';
+          this.pageBack = '/home';
           break;
         case 'lesson':
           this.title = `Gaia: ${(rootToSave.split('title=').pop())}`;

@@ -112,6 +112,12 @@ export class ExercisesPage implements AfterViewInit {
         this.checkResponse();
       }
     }
+    if (event.keyCode > 48 && event.keyCode < 57) {
+      const numberInput = Number(event.key);
+      if (!this.isCorrecting && this.current.type === 'option' && numberInput <= this.current.options.length) {
+        this.response = this.current.options[numberInput - 1];
+      }
+    }
   }
 
   public lessonComplete() {
