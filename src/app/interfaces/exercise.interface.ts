@@ -3,6 +3,6 @@ export interface ExerciseInterface {
   question: string;
   answer: string[];
   type: string;
-  options?: string[];
+  options?: string[] | string[][];
   translation?: string;
 }

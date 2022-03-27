@@ -3,7 +3,7 @@
     "id":"4.1",
     "question":"Lotu hiztegiak",
     "options": [["Tafalla","Gasteiz","Bilbo","Donostia"],["Tafallako","Gasteizko","Bilboko","Donostiako"]],
-    "answer": "[[\"Bilbo\",\"Bilboko\"],[\"Donostia\",\"Donostiako\"],[\"Gasteiz\",\"Gasteizko\"],[\"Tafalla\",\"Tafallako\"]]",
+    "answer": ["[[\"Bilbo\",\"Bilboko\"],[\"Donostia\",\"Donostiako\"],[\"Gasteiz\",\"Gasteizko\"],[\"Tafalla\",\"Tafallako\"]]"],
     "type": "link"
   }
 ]
