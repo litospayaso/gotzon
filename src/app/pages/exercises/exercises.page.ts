@@ -71,6 +71,10 @@ export class ExercisesPage implements AfterViewInit {
     if (this.current.type === 'option') {
       this.current.options = this.current.options.sort(() => Math.random() - 0.5);
     }
+    if (this.current.type === 'link') {
+      this.current.items[0] = this.current.items[0].sort(() => Math.random() - 0.5);
+      this.current.items[1] = this.current.items[1].sort(() => Math.random() - 0.5);
+    }
   }
 
   public checkResponse() {
@@ -115,7 +119,7 @@ export class ExercisesPage implements AfterViewInit {
     if (event.keyCode > 48 && event.keyCode < 57) {
       const numberInput = Number(event.key);
       if (!this.isCorrecting && this.current.type === 'option' && numberInput <= this.current.options.length) {
-        this.response = this.current.options[numberInput - 1];
+        // this.response = this.current.options[numberInput - 1];
       }
     }
   }
