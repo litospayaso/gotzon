@@ -62,5 +62,12 @@
     "question":"Ander y Mikel son de donostia.",
     "answer": ["Ander eta mikel donostiakoak dira"],
     "type": "euskera"
+  },
+  {
+    "id":"3.11",
+    "question":"Lotu hiztegiak",
+    "items": [["Tafalla","Gasteiz","Bilbo","Donostia"],["Tafallako","Gasteizko","Bilboko","Donostiako"]],
+    "answer": ["[[\"Bilbo\",\"Bilboko\"],[\"Donostia\",\"Donostiako\"],[\"Gasteiz\",\"Gasteizko\"],[\"Tafalla\",\"Tafallako\"]]"],
+    "type": "link"
   }
 ]

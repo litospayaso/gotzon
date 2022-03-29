@@ -22,7 +22,7 @@
 
 
     <!-- Default textarea -->
-    <ion-item *ngIf="current && current.type !== 'option'">
+    <ion-item *ngIf="current && current.type !== 'option' && current.type !== 'link'">
       <ion-textarea [(ngModel)]="response"></ion-textarea>
     </ion-item>
 
@@ -34,6 +34,33 @@
         </ion-item>
       </ion-radio-group>
     </ion-list>
+
+    <div class="link-container" *ngIf="current && current.type === 'link'">
+      <ion-grid>
+        <ion-row *ngFor="let item of current.items[1] ; let i = index" class="row-item-container">
+          <ion-col>
+            <div *ngIf="current.items[0][i]" class="link-item-from-card" (click)="selectLinkItem(i)"
+              [class.selected]="i === selectedLinkedItem" draggable="true" (dragstart)="drag($event, i, true)">
+              {{current.items[0][i]}}
+            </div>
+          </ion-col>
+          <ion-col>
+          </ion-col>
+          <ion-col class="link-item-to-container-left">
+            <div class="link-item-to">
+              {{item}}
+            </div>
+          </ion-col>
+          <ion-col class="link-item-to-container-right">
+            <div class="link-item-drop-container" (click)="clickOnDropContainer(i)"
+              [class.selected]="i === selectedLinkedItemDropped" (drop)="dropLinkedItem($event, i)"
+              (dragover)="allowDrop($event)" (dragstart)="drag($event, i, false)" [draggable]="linkResponse[i] ? true : false" [attr.itemTo]="linkResponse[i] ? i : undefined">
+              {{linkResponse[i]}}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
     <!-- <ion-textarea [(ngModel)]="response" (keypress)="onKeyPress($event)"></ion-textarea> -->
 
     <div *ngIf="isCorrecting" class="evaluation" [ngClass]="evaluationClass">
@@ -52,7 +79,8 @@
     </div>
     <div class="correct">¡Has completado correctamente la lección!</div>
     <div class="buttons-container">
-      <ion-button expand="block" [routerLink]="['/home']" routerDirection="root" skipLocationChange>Volver (Etorri)</ion-button>
+      <ion-button expand="block" [routerLink]="['/home']" routerDirection="root" skipLocationChange>Volver (Etorri)
+      </ion-button>
     </div>
   </div>
 </ion-content>

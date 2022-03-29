@@ -66,6 +66,59 @@
     height: 0px;
   }
 
+  .link-container {
+    .row-item-container {
+      padding: 20px 0;
+
+      .link-item-from-card {
+        border: solid #e5e5e5;
+        border-width: 2px 2px 4px;
+        border-radius: 16px;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 20px;
+        padding: 10px 0;
+        cursor: pointer;
+        
+        &.selected {
+          border: solid var(--ion-color-primary-tint);
+        }
+      }
+
+      .link-item-to-container-left {
+        border: solid #e5e5e5;
+        border-width: 2px 0 2px 2px;
+        border-radius: 16px 0 0 16px;
+
+        .link-item-to {
+          text-align: right;
+          padding-top: 20px;
+        }
+      }
+      .link-item-to-container-right {
+        border: solid #e5e5e5;
+        border-width: 2px 2px 2px 0;
+        border-radius: 0 16px 16px 0;
+
+        .link-item-drop-container {
+          border: solid #e5e5e5;
+          border-width: 2px 2px 4px;
+          border-radius: 16px;
+          font-size: 15px;
+          text-align: center;
+          margin: 10px 20px;
+          padding: 10px 0;
+          cursor: pointer;
+          min-height: 50px;
+          
+          &.selected {
+            border: solid var(--ion-color-primary-tint);
+          }  
+        }
+      }
+    }
+  }
+
   .buttons-container {
     margin-top: auto;
   }

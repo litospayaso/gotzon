@@ -20,9 +20,7 @@ export class ThemePopoverComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(`%c this.theme`, `background: #df03fc; color: #f8fc03`, this.theme);
     this.userData = this.userService.getUserThemeData(Number(this.theme.id));
-    console.log(`%c this.userData`, `background: #df03fc; color: #f8fc03`, this.userData);
   }
 
   continue(route: string){
