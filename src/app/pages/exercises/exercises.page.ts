@@ -1,10 +1,11 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { RequestService } from '@services/request.service';
 import { CorrectionService } from '@services/correction.service';
-import { LoadingController } from '@ionic/angular';
+import { LoadingController, ModalController } from '@ionic/angular';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseInterface } from '@app/interfaces/exercise.interface';
 import { UserService } from '@services/user.service';
+import { FeedbackModalComponent } from '@app/components/feedback-modal/feedback-modal.component';
 
 @Component({
   selector: 'app-exercises',
@@ -33,6 +34,7 @@ export class ExercisesPage implements AfterViewInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     public loadingController: LoadingController,
+    public modalController: ModalController,
     private requestService: RequestService,
     private correction: CorrectionService,
     private userService: UserService
@@ -215,6 +217,18 @@ export class ExercisesPage implements AfterViewInit {
 
   public drag(event: DragEvent, i: number, isItemFrom: boolean) {
     event.dataTransfer.setData(isItemFrom ? 'itemFrom' : 'itemTo', String(i));
+  }
+
+  public async openModal() {
+    const modal = await this.modalController.create({
+      component: FeedbackModalComponent,
+      componentProps: {
+        leccion: this.lessonId,
+        id: this.current.id,
+        respuesta: this.response
+      },
+    });
+    await modal.present();
   }
 
 }

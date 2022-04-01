@@ -2,6 +2,7 @@
   <div class="page-container" [innerHTML] = "lesson">
   </div>
   <div class="buttons-container">
+    <ion-button expand="block" color="warning" (click)="openModal()">Reportar un error</ion-button>
     <ion-button expand="block" [routerLink]="['/home']" routerDirection="root" skipLocationChange>Completar la lección (Osatu ikasgaia)</ion-button>
   </div>
 </ion-content>

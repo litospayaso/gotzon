@@ -3,6 +3,9 @@
 }
 .buttons-container {
   padding: 20px;
+  ion-button {
+    margin: 16px 0;
+  }
 }
 
 ::ng-deep {

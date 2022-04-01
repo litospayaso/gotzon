@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { VocabularyInterface } from '@app/interfaces/vocabulary.interface';
 import { LessonsInterface } from '@app/interfaces/lessons.interface';
 import { ExerciseInterface } from '@app/interfaces/exercise.interface';
+import { FeedbackSchemaInterface } from '@app/interfaces/FeedbackSchema.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +26,10 @@ export class RequestService {
   public getLessons(): Observable<LessonsInterface[][]> {
     // tslint:disable-next-line: max-line-length
     return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/lessons.json`) as Observable<LessonsInterface[][]>;
+  }
+  public getFeedbackSchema(): Observable<FeedbackSchemaInterface> {
+    // tslint:disable-next-line: max-line-length
+    return this.http.get(`https://raw.githubusercontent.com/litospayaso/gotzon/master/src/resources/feedback.json`) as Observable<FeedbackSchemaInterface>;
   }
 
   public getLesson(id: string): Observable<string> {

@@ -11,6 +11,7 @@ import { LessonPage } from '@pages/lesson/lesson.page';
 import { ExercisesPage } from '@pages/exercises/exercises.page';
 
 import { ThemePopoverComponent } from '@app/components/theme-popover/theme-popover.component';
+import { FeedbackModalComponent } from '@app/components/feedback-modal/feedback-modal.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { ThemePopoverComponent } from '@app/components/theme-popover/theme-popov
     IonicStorageModule.forRoot(),
   ],
   declarations: [
+    FeedbackModalComponent,
     ThemePopoverComponent,
     HomePage,
     VocabularyPage,

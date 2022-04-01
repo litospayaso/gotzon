@@ -1,8 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RequestService } from '@services/request.service';
 import { UserService } from '@services/user.service';
+import { FeedbackModalComponent } from '@app/components/feedback-modal/feedback-modal.component';
 
 @Component({
   selector: 'app-lesson',
@@ -12,9 +14,11 @@ import { UserService } from '@services/user.service';
 export class LessonPage implements AfterViewInit {
 
   public lesson = '';
+  public id;
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    public modalController: ModalController,
     public loadingController: LoadingController,
     public requestService: RequestService,
     public userService: UserService
@@ -29,6 +33,7 @@ export class LessonPage implements AfterViewInit {
     this.activatedRoute.params.subscribe(params => {
       let {id} = params;
       id = id.split('?')[0];
+      this.id = id;
       this.requestService.getLesson(id).subscribe(data => {
         this.lesson = data;
         loader.dismiss();
@@ -38,6 +43,16 @@ export class LessonPage implements AfterViewInit {
         this.router.navigate(['/home'], {skipLocationChange: true });
       });
     });
+  }
+
+  public async openModal() {
+    const modal = await this.modalController.create({
+      component: FeedbackModalComponent,
+      componentProps: {
+        leccion: this.id
+      },
+    });
+    await modal.present();
   }
 
 }

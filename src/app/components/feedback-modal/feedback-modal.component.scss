@@ -1,0 +1,21 @@
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  iframe {
+    @supports (-moz-appearance:none) {
+      margin-top: -642px;
+      height: 1198px;
+     }
+    margin-top: -629px;
+    height: 1185px;
+  }
+}
+.close-modal-button {
+  margin-top: auto;
+}
+.buttons-container {
+  margin-top: auto;
+}
