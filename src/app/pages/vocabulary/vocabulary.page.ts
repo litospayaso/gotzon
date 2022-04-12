@@ -57,6 +57,12 @@ export class VocabularyPage implements AfterViewInit {
       } else {
         this.requestService.getVocabulary().subscribe(data => {
           this.vocabulary = data;
+          this.totalVocabulary = this.vocabulary.length;
+          loader.dismiss();
+          this.setCurrent();
+        }, (err) => {
+          loader.dismiss();
+          this.router.navigate(['/home'], {skipLocationChange: true });
         });
       }
     });
