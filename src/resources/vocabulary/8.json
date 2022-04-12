@@ -1,0 +1,277 @@
+[  {
+  "spanish": [
+      "Lunes"
+  ],
+  "euskaraz": [
+      "Astelehena",
+      "Astelehen"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "Martes"
+  ],
+  "euskaraz": [
+      "Asteartea",
+      "Martitzena",
+      "Astearte",
+      "Martitzen"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "Miercoles"
+  ],
+  "euskaraz": [
+      "Asteazkena",
+      "Eguaztena",
+      "Asteazken",
+      "Eguazten"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "Jueves"
+  ],
+  "euskaraz": [
+      "Osteguna",
+      "Eguena",
+      "Ostegun",
+      "Eguen"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "Viernes"
+  ],
+  "euskaraz": [
+      "Ostirala",
+      "barikua",
+      "Ostiral",
+      "bariku"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "Sábado"
+  ],
+  "euskaraz": [
+      "Larunbata",
+      "zapatua",
+      "Larunbat",
+      "zapatu"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "Domingo"
+  ],
+  "euskaraz": [
+      "Igandea",
+      "Igande",
+      "domeka"
+  ],
+  "tags": [
+      "Aste",
+      "datak",
+      "eguna"
+  ]
+},
+{
+  "spanish": [
+      "mes"
+  ],
+  "euskaraz": [
+      "hilabetea"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "Enero"
+  ],
+  "euskaraz": [
+      "Urtarrila",
+      "Urtarril"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "Febrero"
+  ],
+  "euskaraz": [
+      "Otsaila",
+      "Otsail"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "Marzo"
+  ],
+  "euskaraz": [
+      "Martxoa",
+      "Martxo"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "abril"
+  ],
+  "euskaraz": [
+      "apirila",
+      "apiril"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "mayo"
+  ],
+  "euskaraz": [
+      "maiatza",
+      "maiatz"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "junio"
+  ],
+  "euskaraz": [
+      "ekaina",
+      "ekain"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "julio"
+  ],
+  "euskaraz": [
+      "utzaila",
+      "utzail"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "agosto"
+  ],
+  "euskaraz": [
+      "abuztua",
+      "abuztu"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "septiembre"
+  ],
+  "euskaraz": [
+      "iraila",
+      "irail"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "octubre"
+  ],
+  "euskaraz": [
+      "urria",
+      "urri"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "noviembre"
+  ],
+  "euskaraz": [
+      "azaroa",
+      "azaro"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+},
+{
+  "spanish": [
+      "diciembre"
+  ],
+  "euskaraz": [
+      "abendua",
+      "abendu"
+  ],
+  "tags": [
+      "datak",
+      "hilabeteak"
+  ]
+}]
