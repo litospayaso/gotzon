@@ -84,5 +84,219 @@
       "vocabulary": true,
       "exercises": true
     }
+  ],
+  [
+    {
+      "id": "10",
+      "title": "EGON",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "11",
+      "title": "Nolakoa",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "12",
+      "title": "Nola",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "13",
+      "title": "Familia",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "14",
+      "title": "Lanbideak",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "15",
+      "title": "Arropa",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "16",
+      "title": "-aren",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "17",
+      "title": "Norena",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "18",
+      "title": "Noren",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "19",
+      "title": "Nori",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "20",
+      "title": "Joan",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "21",
+      "title": "Nora",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "22",
+      "title": "Etorri",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "23",
+      "title": "Nondik",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "23",
+      "title": "Zerez",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "24",
+      "title": "Norekin",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "25",
+      "title": "Zertara",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "26",
+      "title": "Zertarako",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "25",
+      "title": "Nork kasua",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "26",
+      "title": "Aditzak",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "27",
+      "title": "Aspectu puntukaria",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "28",
+      "title": "trinkoak",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "29",
+      "title": "Ohiturako puntukaria",
+      "img": "problem.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
   ]
 ]
