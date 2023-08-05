@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ionic build --prod -- --base-href=\"https://litospayaso.github.io/gotzon/\"",
+    "build-prod": "npx ionic build --prod -- --base-href=\"https://litospayaso.github.io/gotzon/\"",
     "replace-base-href": "node ./scripts/replace.js",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=www",
     "display-release": "node ./scripts/console.js"

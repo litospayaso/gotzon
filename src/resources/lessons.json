@@ -89,7 +89,7 @@
     {
       "id": "10",
       "title": "EGON",
-      "img": "problem.png",
+      "img": "egon.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -99,7 +99,7 @@
     {
       "id": "11",
       "title": "Nolakoa",
-      "img": "problem.png",
+      "img": "nolakoa.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -107,7 +107,7 @@
     {
       "id": "12",
       "title": "Nola",
-      "img": "problem.png",
+      "img": "nola.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -117,7 +117,7 @@
     {
       "id": "13",
       "title": "Familia",
-      "img": "problem.png",
+      "img": "family.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -125,7 +125,7 @@
     {
       "id": "14",
       "title": "Lanbideak",
-      "img": "problem.png",
+      "img": "wrench.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -133,7 +133,7 @@
     {
       "id": "15",
       "title": "Arropa",
-      "img": "problem.png",
+      "img": "dress.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -143,7 +143,7 @@
     {
       "id": "16",
       "title": "-aren",
-      "img": "problem.png",
+      "img": "dog.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -153,7 +153,7 @@
     {
       "id": "17",
       "title": "Norena",
-      "img": "problem.png",
+      "img": "norena.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -161,7 +161,7 @@
     {
       "id": "18",
       "title": "Noren",
-      "img": "problem.png",
+      "img": "noren.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -171,7 +171,7 @@
     {
       "id": "19",
       "title": "Nori",
-      "img": "problem.png",
+      "img": "pointing.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -181,7 +181,7 @@
     {
       "id": "20",
       "title": "Joan",
-      "img": "problem.png",
+      "img": "departures.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -189,7 +189,7 @@
     {
       "id": "21",
       "title": "Nora",
-      "img": "problem.png",
+      "img": "signage.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -199,7 +199,7 @@
     {
       "id": "22",
       "title": "Etorri",
-      "img": "problem.png",
+      "img": "arrivals.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -207,7 +207,7 @@
     {
       "id": "23",
       "title": "Nondik",
-      "img": "problem.png",
+      "img": "nondik.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -217,7 +217,7 @@
     {
       "id": "23",
       "title": "Zerez",
-      "img": "problem.png",
+      "img": "zerez.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -227,7 +227,7 @@
     {
       "id": "24",
       "title": "Norekin",
-      "img": "problem.png",
+      "img": "norekin.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -237,7 +237,7 @@
     {
       "id": "25",
       "title": "Zertara",
-      "img": "problem.png",
+      "img": "zertara.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -245,7 +245,7 @@
     {
       "id": "26",
       "title": "Zertarako",
-      "img": "problem.png",
+      "img": "zertarako.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -255,7 +255,7 @@
     {
       "id": "25",
       "title": "Nork kasua",
-      "img": "problem.png",
+      "img": "bow.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -265,7 +265,7 @@
     {
       "id": "26",
       "title": "Aditzak",
-      "img": "problem.png",
+      "img": "aditzak.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -275,7 +275,7 @@
     {
       "id": "27",
       "title": "Aspectu puntukaria",
-      "img": "problem.png",
+      "img": "metronome.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -283,7 +283,7 @@
     {
       "id": "28",
       "title": "trinkoak",
-      "img": "problem.png",
+      "img": "gift.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true
@@ -293,7 +293,7 @@
     {
       "id": "29",
       "title": "Ohiturako puntukaria",
-      "img": "problem.png",
+      "img": "planning.png",
       "lesson": true,
       "vocabulary": true,
       "exercises": true

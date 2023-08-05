@@ -1,8 +1,8 @@
 <ion-content [fullscreen]="true">
 
   <div class="themes-container">
-    <div *ngFor="let row of themes; let i = index" class="theme">
-      <div class="row-theme" [id]="index">
+    <div *ngFor="let row of themes; index as i" class="theme">
+      <div class="row-theme" [id]="i">
         <div *ngFor="let theme of row" class="theme-element" (click)="openTheme(theme, $event)">
           <div class="progress-container" [ngClass]="theme.complete">
             <svg class="progress-element" viewBox="0 0 100 100" width="110" height="110">
