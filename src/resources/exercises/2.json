@@ -1,56 +1,95 @@
 [
   {
-    "id":"2.1",
-    "question":"Ni Mikel naiz",
-    "answer": ["Yo soy Mikel", "soy Mikel"],
-    "type": "gaztelania"
+    "id": "2.1",
+    "question": "Ni Mikel naiz",
+    "answer": [
+      "Yo soy Mikel",
+      "soy Mikel"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"2.2",
-    "question":"Ella es Natalia",
-    "answer": ["Hura Natalia da", "Bera Natalia da"],
-    "type": "euskera"
+    "id": "2.2",
+    "question": "Ella es Natalia",
+    "answer": [
+      "Hura Natalia da",
+      "Bera Natalia da"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"2.3",
-    "question":"Haiek Elena eta Salomé ___",
-    "options": ["dira","gara","zarete"],
-    "answer": ["dira"],
+    "id": "2.3",
+    "question": "Haiek Elena eta Salomé ___",
+    "options": [
+      "dira",
+      "gara",
+      "zarete"
+    ],
+    "answer": [
+      "dira"
+    ],
     "translation": "Ellas son Elena y Salomé",
-    "type": "option"
+    "type": "option",
+    "title": "Elige la respuesta correcta"
   },
   {
-    "id":"2.4",
-    "question":"Ni Josu ___",
-    "options": ["naiz","zara","da"],
-    "answer": ["naiz"],
+    "id": "2.4",
+    "question": "Ni Josu ___",
+    "options": [
+      "naiz",
+      "zara",
+      "da"
+    ],
+    "answer": [
+      "naiz"
+    ],
     "translation": "Yo soy Josu",
-    "type": "option"
+    "type": "option",
+    "title": "Elige la respuesta correcta"
   },
   {
-    "id":"2.5",
-    "question":"Tu no eres marta",
-    "answer": ["Zu ez zara Marta", "Hi ez haiz Marta"],
-    "type": "euskera"
+    "id": "2.5",
+    "question": "Tu no eres marta",
+    "answer": [
+      "Zu ez zara Marta",
+      "Hi ez haiz Marta"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"2.6",
-    "question":"Yo soy Aingeru",
-    "answer": ["Ni Aingeru naiz"],
-    "type": "euskera"
+    "id": "2.6",
+    "question": "Yo soy Aingeru",
+    "answer": [
+      "Ni Aingeru naiz"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"2.7",
-    "question":"Zuek Eli eta leti zarete",
-    "answer": ["Vosotras sois Eli y Leti"],
-    "type": "gaztelania"
+    "id": "2.7",
+    "question": "Zuek Eli eta leti zarete",
+    "answer": [
+      "Vosotras sois Eli y Leti"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"2.8",
-    "question":"___ Sara zara",
-    "options": ["Ni","Zu","Hura"],
-    "answer": ["Zu"],
+    "id": "2.8",
+    "question": "___ Sara zara",
+    "options": [
+      "Ni",
+      "Zu",
+      "Hura"
+    ],
+    "answer": [
+      "Zu"
+    ],
     "translation": "Tú eres Sara",
-    "type": "option"
+    "type": "option",
+    "title": "Elige la respuesta correcta"
   }
 ]

@@ -1,73 +1,138 @@
 [
   {
-    "id":"3.1",
-    "question":"Gu Gazteizkoak gara",
-    "answer": ["Nosotros somos de vitoria", "Nosotras somos de Vitoria", "Nosotros somos de Gasteiz", "Nosotras somos de Gasteiz"],
-    "type": "gaztelania"
+    "id": "3.1",
+    "question": "Gu Gazteizkoak gara",
+    "answer": [
+      "Nosotros somos de vitoria",
+      "Nosotras somos de Vitoria",
+      "Nosotros somos de Gasteiz",
+      "Nosotras somos de Gasteiz"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"3.2",
-    "question":"Vosotros sois de Pamplona",
-    "answer": ["Zuek Iruñakoak zarete", "Zuek Pamplonakoak zarete"],
-    "type": "euskera"
+    "id": "3.2",
+    "question": "Vosotros sois de Pamplona",
+    "answer": [
+      "Zuek Iruñakoak zarete",
+      "Zuek Pamplonakoak zarete"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"3.3",
-    "question":"¿Quienes sois?",
-    "answer": ["Nortzuk zarete?"],
-    "type": "euskera"
+    "id": "3.3",
+    "question": "¿Quienes sois?",
+    "answer": [
+      "Nortzuk zarete?"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"3.4",
-    "question":"Yo soy de Tafalla",
-    "answer": ["ni Tafallakoa naiz"],
-    "type": "euskera"
+    "id": "3.4",
+    "question": "Yo soy de Tafalla",
+    "answer": [
+      "ni Tafallakoa naiz"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"3.5",
-    "question":"Amaia ___ da",
-    "options": ["madrileko","madrilekoa","madridekoa","madrideko"],
-    "answer": ["madrilekoa"],
+    "id": "3.5",
+    "question": "Amaia ___ da",
+    "options": [
+      "madrileko",
+      "madrilekoa",
+      "madridekoa",
+      "madrideko"
+    ],
+    "answer": [
+      "madrilekoa"
+    ],
     "translation": "Amaia es de Madrid",
-    "type": "option"
+    "type": "option",
+    "title": "Elige la respuesta correcta"
   },
   {
-    "id":"3.6",
-    "question":"Nongoa zara zu?",
-    "options": ["Ni Bilbokoa naiz","Gu Bilbokoa naiz","Ni Ander naiz", "Zu Marta zara"],
-    "answer": ["Ni Bilbokoa naiz"],
+    "id": "3.6",
+    "question": "Nongoa zara zu?",
+    "options": [
+      "Ni Bilbokoa naiz",
+      "Gu Bilbokoa naiz",
+      "Ni Ander naiz",
+      "Zu Marta zara"
+    ],
+    "answer": [
+      "Ni Bilbokoa naiz"
+    ],
     "translation": "De donde eres tú? Yo soy de Bilbao ",
-    "type": "option"
+    "type": "option",
+    "title": "Elige la respuesta correcta"
   },
   {
-    "id":"3.7",
-    "question":"Quien eres tu?",
-    "answer": ["Nor zara zu?", "Nor zu zara?", "Nor zara?", "Nor haiz hi?", "Nor hi haiz?", "Nor haiz?"],
-    "type": "euskera"
+    "id": "3.7",
+    "question": "Quien eres tu?",
+    "answer": [
+      "Nor zara zu?",
+      "Nor zu zara?",
+      "Nor zara?",
+      "Nor haiz hi?",
+      "Nor hi haiz?",
+      "Nor haiz?"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"3.8",
-    "question":"3-1",
-    "answer": ["Marta Bianakoa da?"],
-    "type": "audio"
+    "id": "3.8",
+    "question": "3-1",
+    "answer": [
+      "Marta Bianakoa da?"
+    ],
+    "type": "audio",
+    "title": "Transcribe este audio"
   },
   {
-    "id":"3.9",
-    "question":"3-2",
-    "answer": ["zuek Labastidakoak zarete?"],
-    "type": "audio"
+    "id": "3.9",
+    "question": "3-2",
+    "answer": [
+      "zuek Labastidakoak zarete?"
+    ],
+    "type": "audio",
+    "title": "Transcribe este audio"
   },
   {
-    "id":"3.10",
-    "question":"Ander y Mikel son de donostia.",
-    "answer": ["Ander eta mikel donostiakoak dira"],
-    "type": "euskera"
+    "id": "3.10",
+    "question": "Ander y Mikel son de donostia.",
+    "answer": [
+      "Ander eta Mikel donostiakoak dira"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
   },
   {
-    "id":"3.11",
-    "question":"Lotu hiztegiak",
-    "items": [["Tafalla","Gasteiz","Bilbo","Donostia"],["Tafallako","Gasteizko","Bilboko","Donostiako"]],
-    "answer": ["[[\"Bilbo\",\"Bilboko\"],[\"Donostia\",\"Donostiako\"],[\"Gasteiz\",\"Gasteizko\"],[\"Tafalla\",\"Tafallako\"]]"],
-    "type": "link"
+    "id": "3.11",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Tafalla",
+        "Gasteiz",
+        "Bilbo",
+        "Donostia"
+      ],
+      [
+        "Tafallako",
+        "Gasteizko",
+        "Bilboko",
+        "Donostiako"
+      ]
+    ],
+    "answer": [
+      "[[\"Bilbo\",\"Bilboko\"],[\"Donostia\",\"Donostiako\"],[\"Gasteiz\",\"Gasteizko\"],[\"Tafalla\",\"Tafallako\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
   }
 ]
