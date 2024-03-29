@@ -1,6 +1,6 @@
 [
   {
-    "id": "3.1",
+    "id": "3.01",
     "question": "Gu Gazteizkoak gara",
     "answer": [
       "Nosotros somos de vitoria",
@@ -12,7 +12,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "3.2",
+    "id": "3.02",
     "question": "Vosotros sois de Pamplona",
     "answer": [
       "Zuek Iruñakoak zarete",
@@ -22,7 +22,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "3.3",
+    "id": "3.03",
     "question": "¿Quienes sois?",
     "answer": [
       "Nortzuk zarete?"
@@ -31,7 +31,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "3.4",
+    "id": "3.04",
     "question": "Yo soy de Tafalla",
     "answer": [
       "ni Tafallakoa naiz"
@@ -40,7 +40,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "3.5",
+    "id": "3.05",
     "question": "Amaia ___ da",
     "options": [
       "madrileko",
@@ -56,7 +56,7 @@
     "title": "Elige la respuesta correcta"
   },
   {
-    "id": "3.6",
+    "id": "3.06",
     "question": "Nongoa zara zu?",
     "options": [
       "Ni Bilbokoa naiz",
@@ -72,7 +72,7 @@
     "title": "Elige la respuesta correcta"
   },
   {
-    "id": "3.7",
+    "id": "3.07",
     "question": "Quien eres tu?",
     "answer": [
       "Nor zara zu?",
@@ -86,7 +86,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "3.8",
+    "id": "3.08",
     "question": "3-1",
     "answer": [
       "Marta Bianakoa da?"
@@ -95,7 +95,7 @@
     "title": "Transcribe este audio"
   },
   {
-    "id": "3.9",
+    "id": "3.09",
     "question": "3-2",
     "answer": [
       "zuek Labastidakoak zarete?"

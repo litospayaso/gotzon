@@ -1,6 +1,6 @@
 [
   {
-    "id": "2.1",
+    "id": "2.01",
     "question": "Ni Mikel naiz",
     "answer": [
       "Yo soy Mikel",
@@ -10,7 +10,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "2.2",
+    "id": "2.02",
     "question": "Ella es Natalia",
     "answer": [
       "Hura Natalia da",
@@ -20,7 +20,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "2.3",
+    "id": "2.03",
     "question": "Haiek Elena eta Salomé ___",
     "options": [
       "dira",
@@ -35,7 +35,7 @@
     "title": "Elige la respuesta correcta"
   },
   {
-    "id": "2.4",
+    "id": "2.04",
     "question": "Ni Josu ___",
     "options": [
       "naiz",
@@ -50,7 +50,7 @@
     "title": "Elige la respuesta correcta"
   },
   {
-    "id": "2.5",
+    "id": "2.05",
     "question": "Tu no eres marta",
     "answer": [
       "Zu ez zara Marta",
@@ -60,7 +60,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "2.6",
+    "id": "2.06",
     "question": "Yo soy Aingeru",
     "answer": [
       "Ni Aingeru naiz"
@@ -69,7 +69,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "2.7",
+    "id": "2.07",
     "question": "Zuek Eli eta leti zarete",
     "answer": [
       "Vosotras sois Eli y Leti"
@@ -78,7 +78,7 @@
     "title": "Traduce la siguiente oración"
   },
   {
-    "id": "2.8",
+    "id": "2.08",
     "question": "___ Sara zara",
     "options": [
       "Ni",
