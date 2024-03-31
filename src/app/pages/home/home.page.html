@@ -50,6 +50,13 @@
     </div>
   </div>
 
+  <ion-fab *ngIf="isAdmin" class="training-button" vertical="bottom" horizontal="start" slot="fixed" skipLocationChange
+    routerDirection="root" [routerLink]="['/admin']">
+    <ion-fab-button color="secondary">
+      <ion-icon name="cog-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
   <ion-fab class="training-button" vertical="bottom" horizontal="end" slot="fixed" skipLocationChange
     routerDirection="root" [routerLink]="['/vocabulary']">
     <ion-fab-button>

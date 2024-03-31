@@ -16,6 +16,7 @@ import { filter } from 'rxjs/operators';
 export class HomePage implements AfterViewInit {
 
   public themes: LessonsInterface[][] = [];
+  public isAdmin: boolean = false;
 
   constructor(
     private router: Router,
@@ -24,6 +25,7 @@ export class HomePage implements AfterViewInit {
     public popoverController: PopoverController,
     public userService: UserService
   ){
+    this.isAdmin = window.location.href.includes('localhost');
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
       if (root.url === '/home') {

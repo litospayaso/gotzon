@@ -1,0 +1,120 @@
+[
+  {
+    "id": "9.01",
+    "question": "Ella ha estado cansada",
+    "answer": [
+      "Hura nekatuta egon da",
+      "Bera nekatuta egon da"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "9.02",
+    "question": "Quién ha venido",
+    "answer": [
+      "Nor etorri da"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "9.03",
+    "question": "Zu berandu atera ___",
+    "options": [
+      "dira",
+      "naiz",
+      "zara",
+      "da"
+    ],
+    "answer": [
+      "zara"
+    ],
+    "translation": "Tú has llegado tarde",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "9.04",
+    "question": "Nor etorri da?",
+    "options": [
+      "Mikel etorri naiz",
+      "Mikel bizi da",
+      "Zu etorri zarete",
+      "Hura etorri da"
+    ],
+    "answer": [
+      "Hura etorri da"
+    ],
+    "translation": "Quién ha venido? Él ha venido",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "9.05",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Etorri",
+        "Joan",
+        "Egon",
+        "Ibili"
+      ],
+      [
+        "Venir",
+        "Ir",
+        "Estar",
+        "Andar"
+      ]
+    ],
+    "answer": [
+      "[[\"Etorri\",\"Venir\"],[\"Joan\",\"Ir\"],[\"Egon\",\"Estar\"],[\"Ibili\",\"Andar\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "9.06",
+    "question": "Vosotros habéis ido",
+    "answer": [
+      "Zuek joan zarete"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "9.07",
+    "question": "El bebé ha nacido",
+    "answer": [
+      "Haurra jaio da",
+      "Umetxo jaio da"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "9.08",
+    "question": "El tren ha salido tarde",
+    "answer": [
+      "Trena berandu atera da"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "9.9",
+    "question": "Amaia berandu ____ da",
+    "options": [
+      "joan",
+      "bizi",
+      "hil",
+      "egon"
+    ],
+    "answer": [
+      "joan"
+    ],
+    "translation": "Amaia ha ido tarde ",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  }
+]

@@ -215,7 +215,7 @@
   ],
   [
     {
-      "id": "23",
+      "id": "24",
       "title": "Zerez",
       "img": "zerez.png",
       "lesson": true,
@@ -225,7 +225,7 @@
   ],
   [
     {
-      "id": "24",
+      "id": "25",
       "title": "Norekin",
       "img": "norekin.png",
       "lesson": true,
@@ -235,25 +235,7 @@
   ],
   [
     {
-      "id": "25",
-      "title": "Zertara",
-      "img": "zertara.png",
-      "lesson": true,
-      "vocabulary": true,
-      "exercises": true
-    },
-    {
       "id": "26",
-      "title": "Zertarako",
-      "img": "zertarako.png",
-      "lesson": true,
-      "vocabulary": true,
-      "exercises": true
-    }
-  ],
-  [
-    {
-      "id": "25",
       "title": "Nork kasua",
       "img": "bow.png",
       "lesson": true,
@@ -263,7 +245,7 @@
   ],
   [
     {
-      "id": "26",
+      "id": "27",
       "title": "Aditzak",
       "img": "aditzak.png",
       "lesson": true,
@@ -273,7 +255,25 @@
   ],
   [
     {
-      "id": "27",
+      "id": "28",
+      "title": "Zertara",
+      "img": "zertara.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    },
+    {
+      "id": "29",
+      "title": "Zertarako",
+      "img": "zertarako.png",
+      "lesson": true,
+      "vocabulary": true,
+      "exercises": true
+    }
+  ],
+  [
+    {
+      "id": "30",
       "title": "Aspectu puntukaria",
       "img": "metronome.png",
       "lesson": true,
@@ -281,7 +281,7 @@
       "exercises": true
     },
     {
-      "id": "28",
+      "id": "31",
       "title": "trinkoak",
       "img": "gift.png",
       "lesson": true,
@@ -291,7 +291,7 @@
   ],
   [
     {
-      "id": "29",
+      "id": "32",
       "title": "Ohiturako puntukaria",
       "img": "planning.png",
       "lesson": true,

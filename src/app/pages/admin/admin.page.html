@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <div class="page-container">
+    <ion-list>
+
+      <ion-item>
+        <ion-label>Type</ion-label>
+        <ion-select label="Type" placeholder="Type" [(ngModel)]="type">
+          <ion-select-option value="exercise">exercise</ion-select-option>
+          <ion-select-option value="vocabulary">vocabulary</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Lesson</ion-label>
+        <ion-input placeholder="Lesson" type="number"  [(ngModel)]="lesson" (change)="updateData()" style="text-align: right;"></ion-input>
+      </ion-item>
+
+
+    </ion-list>
+  </div>
+</ion-content>

@@ -16,7 +16,7 @@ import appPages from '@resources/appPages.json';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  public title = 'Naia';
+  public title = 'Gotzon';
   public pageBack = '';
   public widthMenu = '0';
   public appPages = appPages;
@@ -40,7 +40,7 @@ export class AppComponent {
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'home':
-          this.title = 'Naia';
+          this.title = 'Gotzon';
           this.pageBack = '';
           break;
         case 'vocabulary':
@@ -53,6 +53,10 @@ export class AppComponent {
           break;
         case 'exercises':
           this.title = `Ariketak: ${(rootToSave.split('title=').pop())}`;
+          this.pageBack = '/home';
+          break;
+        case 'admin':
+          this.title = `admin`;
           this.pageBack = '/home';
           break;
         default:

@@ -1,0 +1,149 @@
+[
+  {
+    "spanish": [
+      "Vivir"
+    ],
+    "euskaraz": [
+      "Bizi"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.00"
+  },
+  {
+    "spanish": [
+      "Nacer"
+    ],
+    "euskaraz": [
+      "Jaio"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.01"
+  },
+  {
+    "spanish": [
+      "Morir",
+      "Matar",
+      "Asesinar"
+    ],
+    "euskaraz": [
+      "Hil"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.02"
+  },
+  {
+    "spanish": [
+      "Venir"
+    ],
+    "euskaraz": [
+      "Etorri"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.03"
+  },
+  {
+    "spanish": [
+      "Ir"
+    ],
+    "euskaraz": [
+      "Joan"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.04"
+  },
+  {
+    "spanish": [
+      "Estar"
+    ],
+    "euskaraz": [
+      "Egon"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.05"
+  },
+  {
+    "spanish": [
+      "Ibili"
+    ],
+    "euskaraz": [
+      "Andar"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.06"
+  },
+  {
+    "spanish": [
+      "Entar"
+    ],
+    "euskaraz": [
+      "Sartu"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.07"
+  },
+  {
+    "spanish": [
+      "Salir"
+    ],
+    "euskaraz": [
+      "Atera"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.08"
+  },
+  {
+    "spanish": [
+      "Venir"
+    ],
+    "euskaraz": [
+      "Etorri"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.09"
+  },
+  {
+    "spanish": [
+      "Llegar"
+    ],
+    "euskaraz": [
+      "Heldu",
+      "Iritsi",
+      "Ailegatu"
+    ],
+    "tags": [
+      "Aditza",
+      "NOR"
+    ],
+    "id": "9.10"
+  }
+]
