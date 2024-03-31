@@ -1,0 +1,80 @@
+[
+  {
+    "spanish": [
+      "Estoy"
+    ],
+    "euskaraz": [
+      "Nago"
+    ],
+    "tags": [
+      "Aditza",
+      "EGON"
+    ],
+    "id": "10.00"
+  },
+  {
+    "spanish": [
+      "Estás"
+    ],
+    "euskaraz": [
+      "Zaude"
+    ],
+    "tags": [
+      "Aditza",
+      "EGON"
+    ],
+    "id": "10.01"
+  },
+  {
+    "spanish": [
+      "Está"
+    ],
+    "euskaraz": [
+      "Dago"
+    ],
+    "tags": [
+      "Aditza",
+      "EGON"
+    ],
+    "id": "10.02"
+  },
+  {
+    "spanish": [
+      "Estamos"
+    ],
+    "euskaraz": [
+      "Gaude"
+    ],
+    "tags": [
+      "Aditza",
+      "EGON"
+    ],
+    "id": "10.03"
+  },
+  {
+    "spanish": [
+      "Estáis"
+    ],
+    "euskaraz": [
+      "Zaudete"
+    ],
+    "tags": [
+      "Aditza",
+      "EGON"
+    ],
+    "id": "10.04"
+  },
+  {
+    "spanish": [
+      "Están"
+    ],
+    "euskaraz": [
+      "Daude"
+    ],
+    "tags": [
+      "Aditza",
+      "EGON"
+    ],
+    "id": "10.05"
+  }
+]

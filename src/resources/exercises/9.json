@@ -75,9 +75,9 @@
   },
   {
     "id": "9.06",
-    "question": "Vosotros habéis ido",
+    "question": "Vosotros no habéis ido",
     "answer": [
-      "Zuek joan zarete"
+      "Zuek ez zarete joan"
     ],
     "type": "gaztelania",
     "title": "Traduce la siguiente oración"
@@ -94,9 +94,10 @@
   },
   {
     "id": "9.08",
-    "question": "El tren ha salido tarde",
+    "question": "El tren no ha salido tarde",
     "answer": [
-      "Trena berandu atera da"
+      "Trena ez da atera berandu",
+      "Trena ez da berandu atera"
     ],
     "type": "gaztelania",
     "title": "Traduce la siguiente oración"

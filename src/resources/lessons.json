@@ -92,12 +92,20 @@
       "img": "egon.png",
       "lesson": true,
       "vocabulary": true,
+      "exercises": false
+    },
+    {
+      "id": "11",
+      "title": "Non",
+      "img": "maps.png",
+      "lesson": true,
+      "vocabulary": false,
       "exercises": true
     }
   ],
   [
     {
-      "id": "11",
+      "id": "12",
       "title": "Nolakoa",
       "img": "nolakoa.png",
       "lesson": true,
@@ -105,7 +113,7 @@
       "exercises": true
     },
     {
-      "id": "12",
+      "id": "13",
       "title": "Nola",
       "img": "nola.png",
       "lesson": true,
@@ -115,7 +123,7 @@
   ],
   [
     {
-      "id": "13",
+      "id": "14",
       "title": "Familia",
       "img": "family.png",
       "lesson": true,
@@ -123,7 +131,7 @@
       "exercises": true
     },
     {
-      "id": "14",
+      "id": "15",
       "title": "Lanbideak",
       "img": "wrench.png",
       "lesson": true,
@@ -131,7 +139,7 @@
       "exercises": true
     },
     {
-      "id": "15",
+      "id": "16",
       "title": "Arropa",
       "img": "dress.png",
       "lesson": true,
@@ -141,7 +149,7 @@
   ],
   [
     {
-      "id": "16",
+      "id": "17",
       "title": "-aren",
       "img": "dog.png",
       "lesson": true,
@@ -151,7 +159,7 @@
   ],
   [
     {
-      "id": "17",
+      "id": "18",
       "title": "Norena",
       "img": "norena.png",
       "lesson": true,
@@ -159,7 +167,7 @@
       "exercises": true
     },
     {
-      "id": "18",
+      "id": "19",
       "title": "Noren",
       "img": "noren.png",
       "lesson": true,
@@ -169,7 +177,7 @@
   ],
   [
     {
-      "id": "19",
+      "id": "20",
       "title": "Nori",
       "img": "pointing.png",
       "lesson": true,
@@ -179,7 +187,7 @@
   ],
   [
     {
-      "id": "20",
+      "id": "21",
       "title": "Joan",
       "img": "departures.png",
       "lesson": true,
@@ -187,7 +195,7 @@
       "exercises": true
     },
     {
-      "id": "21",
+      "id": "22",
       "title": "Nora",
       "img": "signage.png",
       "lesson": true,
@@ -197,7 +205,7 @@
   ],
   [
     {
-      "id": "22",
+      "id": "23",
       "title": "Etorri",
       "img": "arrivals.png",
       "lesson": true,
@@ -205,7 +213,7 @@
       "exercises": true
     },
     {
-      "id": "23",
+      "id": "24",
       "title": "Nondik",
       "img": "nondik.png",
       "lesson": true,
@@ -215,7 +223,7 @@
   ],
   [
     {
-      "id": "24",
+      "id": "25",
       "title": "Zerez",
       "img": "zerez.png",
       "lesson": true,
@@ -225,7 +233,7 @@
   ],
   [
     {
-      "id": "25",
+      "id": "26",
       "title": "Norekin",
       "img": "norekin.png",
       "lesson": true,
@@ -235,7 +243,7 @@
   ],
   [
     {
-      "id": "26",
+      "id": "27",
       "title": "Nork kasua",
       "img": "bow.png",
       "lesson": true,
@@ -245,7 +253,7 @@
   ],
   [
     {
-      "id": "27",
+      "id": "28",
       "title": "Aditzak",
       "img": "aditzak.png",
       "lesson": true,
@@ -255,7 +263,7 @@
   ],
   [
     {
-      "id": "28",
+      "id": "29",
       "title": "Zertara",
       "img": "zertara.png",
       "lesson": true,
@@ -263,7 +271,7 @@
       "exercises": true
     },
     {
-      "id": "29",
+      "id": "30",
       "title": "Zertarako",
       "img": "zertarako.png",
       "lesson": true,
@@ -273,7 +281,7 @@
   ],
   [
     {
-      "id": "30",
+      "id": "31",
       "title": "Aspectu puntukaria",
       "img": "metronome.png",
       "lesson": true,
@@ -281,7 +289,7 @@
       "exercises": true
     },
     {
-      "id": "31",
+      "id": "32",
       "title": "trinkoak",
       "img": "gift.png",
       "lesson": true,
@@ -291,7 +299,7 @@
   ],
   [
     {
-      "id": "32",
+      "id": "33",
       "title": "Ohiturako puntukaria",
       "img": "planning.png",
       "lesson": true,
