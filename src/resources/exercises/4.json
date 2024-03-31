@@ -1,0 +1,114 @@
+[
+  {
+    "id": "4.01",
+    "question": "Gu emakumeak gara",
+    "answer": [
+      "Nosotras somos mujeres",
+      "Nosotras somos las mujeres"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "4.02",
+    "question": "La casa nueva",
+    "answer": [
+      "Etxe berria"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "4.03",
+    "question": "El hombre pequeño",
+    "answer": [
+      "Gizon txikia"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "4.04",
+    "question": "Tú eres un chico",
+    "answer": [
+      "Zu mutil bat zara",
+      "Zu mutila zara",
+      "Zu zara mutila",
+      "Zu zara mutil bat"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "4.05",
+    "question": "Cuál es la correcta?",
+    "options": [
+      "Liburu berria",
+      "Liburua berri",
+      "Liburua berria"
+    ],
+    "answer": [
+      "Liburu berria"
+    ],
+    "translation": "El libro nuevo",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "4.06",
+    "question": "Nor da txikia?",
+    "options": [
+      "Liburua",
+      "Neska",
+      "Etxea",
+      "Kotxea"
+    ],
+    "answer": [
+      "Neska"
+    ],
+    "translation": "Quién es pequeña? La niña",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "4.07",
+    "question": "Los libros viejos son bonitos",
+    "answer": [
+      "Liburu zaharrak politak dira"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "4.08",
+    "question": "Vosotros sois chicos pequeños",
+    "answer": [
+      "Zuek mutil txikiak zarete"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "4.09",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Chico",
+        "Chica",
+        "Hombre",
+        "Mujer"
+      ],
+      [
+        "Mutil",
+        "Neska",
+        "Gizon",
+        "Emakume"
+      ]
+    ],
+    "answer": [
+      "[[\"Chico\",\"Mutil\"],[\"Chica\",\"Neska\"],[\"Hombre\",\"Gizon\"],[\"Mujer\",\"Neska\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  }
+]

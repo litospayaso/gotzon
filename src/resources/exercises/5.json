@@ -1,0 +1,133 @@
+[
+  {
+    "id": "5.01",
+    "question": "Aquel coche feo",
+    "answer": [
+      "Kotxe itsusi hura",
+      "Auto itsusi hura"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "5.02",
+    "question": "Esta casa nueva",
+    "answer": [
+      "Etxe berri hau"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "5.03",
+    "question": "Estos chicos son lentos",
+    "answer": [
+      "Mutil hauek mantsoak dira",
+      "Mutil hauek motelak dira"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "5.04",
+    "question": "Esas chicas son listas",
+    "answer": [
+      "Neska horiek argiak dira",
+      "Neska horiek bizkorrak dira"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "5.05",
+    "question": "Kotxe ____ azkarrak dira",
+    "options": [
+      "Hori",
+      "Hau",
+      "Haiek",
+      "Hura"
+    ],
+    "answer": [
+      "Haiek"
+    ],
+    "translation": "Aquellos coches son rápidos",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "5.06",
+    "question": "Zer da Zaharra?",
+    "options": [
+      "Etxea hau",
+      "Emakume hori",
+      "Liburu hauek",
+      "Taberna hori"
+    ],
+    "answer": [
+      "Taberna hori"
+    ],
+    "translation": "Qué es viejo? Esa taberna",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "5.07",
+    "question": "Los libros viejos son bonitos",
+    "answer": [
+      "Liburu zaharrak politak dira"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "5.08",
+    "question": "Vosotros sois chicos pequeños",
+    "answer": [
+      "Zuek mutil txikiak zarete"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "5.09",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Este",
+        "Ese",
+        "Aquel"
+      ],
+      [
+        "Hau",
+        "Hori",
+        "Hura"
+      ]
+    ],
+    "answer": [
+      "[[\"Este\",\"Hau\"],[\"Ese\",\"Hori\"],[\"Aquel\",\"Hura\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "5.10",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Estos",
+        "Esos",
+        "Aquellos"
+      ],
+      [
+        "Hauek",
+        "Horiek",
+        "Haiek"
+      ]
+    ],
+    "answer": [
+      "[[\"Estos\",\"Hauek\"],[\"Esos\",\"Horiek\"],[\"Aquellos\",\"Haiek\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  }
+]

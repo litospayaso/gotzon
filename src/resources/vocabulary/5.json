@@ -1,0 +1,285 @@
+[
+  {
+    "spanish": [
+      "Este",
+      "Esta",
+      "Esto"
+    ],
+    "euskaraz": [
+      "Hau"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.00"
+  },
+  {
+    "spanish": [
+      "Ese",
+      "Esa",
+      "Eso"
+    ],
+    "euskaraz": [
+      "Hori"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.01"
+  },
+  {
+    "spanish": [
+      "Aquel",
+      "Aquell",
+      "Aquello"
+    ],
+    "euskaraz": [
+      "Hura"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.02"
+  },
+  {
+    "spanish": [
+      "Estos",
+      "Estas"
+    ],
+    "euskaraz": [
+      "Hauek"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.03"
+  },
+  {
+    "spanish": [
+      "Esos",
+      "Esas"
+    ],
+    "euskaraz": [
+      "Horiek"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.04"
+  },
+  {
+    "spanish": [
+      "Aquellos",
+      "Aquellas"
+    ],
+    "euskaraz": [
+      "Hauek"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.06"
+  },
+  {
+    "spanish": [
+      "Bonito",
+      "Bonita"
+    ],
+    "euskaraz": [
+      "Polita",
+      "Eder",
+      "Ederra"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.07"
+  },
+  {
+    "spanish": [
+      "Feo",
+      "Fea"
+    ],
+    "euskaraz": [
+      "Itsusi",
+      "Itsusia"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.08"
+  },
+  {
+    "spanish": [
+      "Nuevo",
+      "Nueva"
+    ],
+    "euskaraz": [
+      "Berri",
+      "Berria"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.09"
+  },
+  {
+    "spanish": [
+      "Alto",
+      "Alta"
+    ],
+    "euskaraz": [
+      "Altu",
+      "Altua"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.10"
+  },
+  {
+    "spanish": [
+      "bajo",
+      "baja"
+    ],
+    "euskaraz": [
+      "baxu",
+      "baxua"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.11"
+  },
+  {
+    "spanish": [
+      "Grande"
+    ],
+    "euskaraz": [
+      "Txiki",
+      "Txikia"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.12"
+  },
+  {
+    "spanish": [
+      "Pequeño",
+      "Pequeña"
+    ],
+    "euskaraz": [
+      "Txiki",
+      "Txikia"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.13"
+  },
+  {
+    "spanish": [
+      "Listo",
+      "Lista"
+    ],
+    "euskaraz": [
+      "Argi",
+      "Argia",
+      "Bizkor",
+      "Bizkorra"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.14"
+  },
+  {
+    "spanish": [
+      "Tonto",
+      "Tonta"
+    ],
+    "euskaraz": [
+      "Tentel",
+      "Tentela",
+      "Tonto"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.15"
+  },
+  {
+    "spanish": [
+      "Bueno",
+      "Buena"
+    ],
+    "euskaraz": [
+      "On",
+      "Ona",
+      "Ongi"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.16"
+  },
+  {
+    "spanish": [
+      "Malo",
+      "Mala"
+    ],
+    "euskaraz": [
+      "Gaizto",
+      "Gaiztoa"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.17"
+  },
+  {
+    "spanish": [
+      "Rápido",
+      "Rápida"
+    ],
+    "euskaraz": [
+      "Azkar",
+      "Azkarra"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.18"
+  },
+  {
+    "spanish": [
+      "Lento",
+      "Lenta"
+    ],
+    "euskaraz": [
+      "Motel",
+      "Motela",
+      "Mantso",
+      "Mantsoa"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.19"
+  },
+  {
+    "spanish": [
+      "Viejo",
+      "Vieja"
+    ],
+    "euskaraz": [
+      "Zahar",
+      "Zaharra"
+    ],
+    "tags": [
+      "Erakusleak"
+    ],
+    "id": "5.20"
+  }
+]

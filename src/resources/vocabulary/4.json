@@ -1,0 +1,116 @@
+[
+  {
+    "spanish": [
+      "Casa"
+    ],
+    "euskaraz": [
+      "Etxea",
+      "Etxe"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.00"
+  },
+  {
+    "spanish": [
+      "Libro"
+    ],
+    "euskaraz": [
+      "Liburu",
+      "Liburua"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.01"
+  },
+  {
+    "spanish": [
+      "Coche"
+    ],
+    "euskaraz": [
+      "Kotxe",
+      "Kotxea"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.02"
+  },
+  {
+    "spanish": [
+      "Hombre"
+    ],
+    "euskaraz": [
+      "Gizon",
+      "Gizona"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.03"
+  },
+  {
+    "spanish": [
+      "Mujer"
+    ],
+    "euskaraz": [
+      "Emakume",
+      "Emakumea"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.04"
+  },
+  {
+    "spanish": [
+      "Niño",
+      "Niña"
+    ],
+    "euskaraz": [
+      "Ume",
+      "Umea",
+      "Haur",
+      "Haurra"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.05"
+  },
+  {
+    "spanish": [
+      "Chico"
+    ],
+    "euskaraz": [
+      "Mutil",
+      "Mutila"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.06"
+  },
+  {
+    "spanish": [
+      "Chica"
+    ],
+    "euskaraz": [
+      "Neska"
+    ],
+    "tags": [
+      "Basikoa",
+      "Izenak"
+    ],
+    "id": "4.07"
+  }
+]
