@@ -1,0 +1,161 @@
+[
+  {
+    "spanish": [
+      "Jóven"
+    ],
+    "euskaraz": [
+      "Gazte",
+      "Gaztea"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.00"
+  },
+  {
+    "spanish": [
+      "Mayor"
+    ],
+    "euskaraz": [
+      "Nagusi",
+      "Nagusia"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.01"
+  },
+  {
+    "spanish": [
+      "Bueno"
+    ],
+    "euskaraz": [
+      "On",
+      "Ona"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.02"
+  },
+  {
+    "spanish": [
+      "Malo"
+    ],
+    "euskaraz": [
+      "Txar",
+      "Txarra",
+      "Gaizto",
+      "Gaiztoa"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.03"
+  },
+  {
+    "spanish": [
+      "Alto"
+    ],
+    "euskaraz": [
+      "Altu",
+      "Altua"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.04"
+  },
+  {
+    "spanish": [
+      "Bajo"
+    ],
+    "euskaraz": [
+      "Baixu",
+      "Baixua"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.05"
+  },
+  {
+    "spanish": [
+      "Pelicorto"
+    ],
+    "euskaraz": [
+      "Ilemotza",
+      "Ilemotz"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.06"
+  },
+  {
+    "spanish": [
+      "Pelilargo"
+    ],
+    "euskaraz": [
+      "Ileluzea",
+      "Ileluze"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.07"
+  },
+  {
+    "spanish": [
+      "Rubio",
+      "Rubia"
+    ],
+    "euskaraz": [
+      "Ilehoria",
+      "Ilehori"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.08"
+  },
+  {
+    "spanish": [
+      "Pelirrojo",
+      "Pelirroja"
+    ],
+    "euskaraz": [
+      "Ilegorria",
+      "Ilegorri"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.09"
+  },
+  {
+    "spanish": [
+      "Moreno",
+      "Morena"
+    ],
+    "euskaraz": [
+      "Ilebeltza",
+      "Ilebeltz"
+    ],
+    "tags": [
+      "adjektibo",
+      "NOLAKOA"
+    ],
+    "id": "12.10"
+  }
+]

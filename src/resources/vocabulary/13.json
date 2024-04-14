@@ -1,0 +1,155 @@
+[
+  {
+    "spanish": [
+      "Bien"
+    ],
+    "euskaraz": [
+      "Ondo"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.00"
+  },
+  {
+    "spanish": [
+      "Mal"
+    ],
+    "euskaraz": [
+      "Txarto"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.01"
+  },
+  {
+    "spanish": [
+      "Contento",
+      "Contenta"
+    ],
+    "euskaraz": [
+      "Pozik",
+      "Alai",
+      "Alaia"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.02"
+  },
+  {
+    "spanish": [
+      "Alegre"
+    ],
+    "euskaraz": [
+      "Alegre",
+      "Contento",
+      "Contenta"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.03"
+  },
+  {
+    "spanish": [
+      "Triste"
+    ],
+    "euskaraz": [
+      "Triste"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.04"
+  },
+  {
+    "spanish": [
+      "Nervioso",
+      "Nerviosa"
+    ],
+    "euskaraz": [
+      "Urduri"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.05"
+  },
+  {
+    "spanish": [
+      "Tranquilo",
+      "Tranquila"
+    ],
+    "euskaraz": [
+      "Lasai"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.06"
+  },
+  {
+    "spanish": [
+      "Valiente"
+    ],
+    "euskaraz": [
+      "Ausarta"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.07"
+  },
+  {
+    "spanish": [
+      "Enfermo",
+      "Enferma"
+    ],
+    "euskaraz": [
+      "Gaixorik"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.08"
+  },
+  {
+    "spanish": [
+      "Enfadado",
+      "Enfadada"
+    ],
+    "euskaraz": [
+      "Haserre"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.09"
+  },
+  {
+    "spanish": [
+      "Dormido",
+      "Dormida"
+    ],
+    "euskaraz": [
+      "Lotan"
+    ],
+    "tags": [
+      "adberbio",
+      "NOLA"
+    ],
+    "id": "13.10"
+  }
+]

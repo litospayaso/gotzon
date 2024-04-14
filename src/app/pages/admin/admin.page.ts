@@ -42,7 +42,6 @@ export class AdminPage implements AfterViewInit {
   getExercises() {
     this.loader.present();
     this.localService.getExerciseById(this.lesson).subscribe(data => {
-      console.log('%c data', 'background: #df03fc; color: #f8fc03', data);
       this.exercises = data;
       this.loader.dismiss();
     }, (err) => {
