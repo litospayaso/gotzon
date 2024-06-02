@@ -1,0 +1,25 @@
+[
+  {
+    "id": "14.01",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Ama",
+        "Semea",
+        "Osaba",
+        "Lehengusu"
+      ],
+      [
+        "Aita",
+        "Alaba",
+        "Izeba",
+        "Lehengusina"
+      ]
+    ],
+    "answer": [
+      "[[\"Ama\",\"Aita\"],[\"Semea\",\"Alaba\"],[\"Osaba\",\"Izeba\"],[\"Lehengusu\",\"Lehengusina\"]]"
+    ],
+    "type": "link",
+    "title": "Une con el mismo miembro de la familia"
+  }
+]
