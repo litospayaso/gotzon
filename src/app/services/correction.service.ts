@@ -41,4 +41,17 @@ export class CorrectionService {
     }// the answer is wrong
     return false;
   }
+
+  public compareArrays(arr1: string[][], arr2: string[][]): boolean{
+    let result = true;
+    arr1.forEach(elem => {
+      const correctAnswer = arr2.find(e => e.includes(elem[0]));
+      if (correctAnswer) {
+        elem.forEach(res => result = result && correctAnswer.includes(res));
+      } else {
+        result = false;
+      }
+    })
+    return result;
+  }
 }

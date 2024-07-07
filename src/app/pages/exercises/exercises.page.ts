@@ -95,8 +95,10 @@ export class ExercisesPage implements AfterViewInit {
         return 0;
       });
       this.response = JSON.stringify(objectResponse);
+      this.current.answer.forEach(e => correct = correct || this.correction.compareArrays(JSON.parse(this.response), JSON.parse(e)));
+    } else {
+      this.current.answer.forEach(e => correct = correct || this.correction.compareStrings(this.response ? this.response : '', e));
     }
-    this.current.answer.forEach(e => correct = correct || this.correction.compareStrings(this.response ? this.response : '', e));
     if (correct) {
       this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() => Math.random() - 0.5).pop();
       this.evaluationClass = 'correct';
