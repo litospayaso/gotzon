@@ -7,7 +7,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "release": "npm run build-prod && npm run replace-base-href && npm run deploy-ghpages && npm run display-release",
+    "release": "standard-version",
+    "deploy": "npm run build-prod && npm run replace-base-href && npm run deploy-ghpages && npm run display-release",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -37,6 +38,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "rxjs": "~6.5.5",
+    "standard-version": "^9.5.0",
     "tslib": "^2.0.0",
     "uuid": "^8.3.2",
     "zone.js": "~0.10.3"
