@@ -6,16 +6,18 @@
         {{current.spanish[0]}}
       </ion-card-content>
     </ion-card>
-    <!-- Default textarea -->
+
     <ion-item>
       <ion-textarea [(ngModel)]="response"></ion-textarea>
     </ion-item>
 
-    <div *ngIf="isCorrecting" class="evaluation" [ngClass]="evaluationClass">
-      {{isCorrecting}}
+    <div class="correcting-container" [ngClass]="{'correcting': isCorrecting }">
+      <div class="evaluation" [ngClass]="evaluationClass">
+        {{isCorrecting}}
+      </div>
     </div>
 
-    <div class="buttons-container">
+    <div class="buttons-container correcting-buttons">
       <ion-button expand="block" *ngIf="!isCorrecting" (click)="checkResponse()">Zuzendu</ion-button>
       <ion-button expand="block" *ngIf="isCorrecting" (click)="continue()">Jarraitu</ion-button>
     </div>

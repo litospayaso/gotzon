@@ -6,6 +6,7 @@ import { CorrectionService } from '@app/services/correction.service';
 import { LoadingController } from '@ionic/angular';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '@app/services/user.service';
+import { SoundService } from '@app/services/sound.service';
 
 @Component({
   selector: 'app-vocabulary',
@@ -31,7 +32,8 @@ export class VocabularyPage implements AfterViewInit {
     private router: Router,
     public loadingController: LoadingController,
     private activatedRoute: ActivatedRoute,
-    private userService: UserService
+    private userService: UserService,
+    private soundService: SoundService
   ) { }
 
   async ngAfterViewInit() {
@@ -66,8 +68,6 @@ export class VocabularyPage implements AfterViewInit {
         });
       }
     });
-
-    // this.setCurrent();
   }
 
   private setCurrent() {
@@ -84,12 +84,14 @@ export class VocabularyPage implements AfterViewInit {
     this.current.euskaraz.forEach(e => correct = correct || this.correction.compareStrings(this.response ? this.response : '', e));
     if (correct) {
       this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() => Math.random() - 0.5).pop();
+      this.soundService.emitSound('success');
       this.evaluationClass = 'correct';
       if (this.lessonId) {
         this.completePercent = ((this.totalVocabulary - this.vocabulary.length) * 100 / this.totalVocabulary) + '%';
       }
     } else {
       this.isCorrecting = `Akats: ${this.current.euskaraz[0]}`;
+      this.soundService.emitSound('fail');
       this.evaluationClass = 'error';
     }
   }
@@ -134,6 +136,7 @@ export class VocabularyPage implements AfterViewInit {
   public lessonComplete() {
     this.congratulations = true;
     this.completePercent = '100%';
+    this.soundService.emitSound('complete');
     this.userService.setVocabularyCompleted(Number(this.lessonId));
   }
 

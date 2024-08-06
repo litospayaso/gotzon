@@ -5,6 +5,7 @@ import { LoadingController, ModalController } from '@ionic/angular';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseInterface } from '@app/interfaces/exercise.interface';
 import { UserService } from '@services/user.service';
+import { SoundService } from '@services/sound.service';
 import { FeedbackModalComponent } from '@app/components/feedback-modal/feedback-modal.component';
 
 @Component({
@@ -36,6 +37,7 @@ export class ExercisesPage implements AfterViewInit {
     public loadingController: LoadingController,
     public modalController: ModalController,
     private requestService: RequestService,
+    private soundService: SoundService,
     private correction: CorrectionService,
     private userService: UserService
   ) { }
@@ -77,6 +79,7 @@ export class ExercisesPage implements AfterViewInit {
     }
     if (this.current.type === 'option') {
       this.current.options = this.current.options.sort(() => Math.random() - 0.5);
+      document.querySelector('ion-content').focus();
     }
     if (this.current.type === 'link') {
       this.current.items[0] = this.current.items[0].sort(() => Math.random() - 0.5);
@@ -101,10 +104,12 @@ export class ExercisesPage implements AfterViewInit {
     }
     if (correct) {
       this.isCorrecting = ['Oso ondo! ', 'Zuzen! ', 'Egoki! '].sort(() => Math.random() - 0.5).pop();
+      this.soundService.emitSound('success');
       this.evaluationClass = 'correct';
       this.completePercent = ((this.totalExercises - this.exercises.length) * 100 / this.totalExercises) + '%';
     } else {
       this.isCorrecting = `Akats: ${this.current.type !== 'link' ? this.current.answer[0] : ''}`;
+      this.soundService.emitSound('fail');
       this.evaluationClass = 'error';
     }
   }
@@ -131,6 +136,7 @@ export class ExercisesPage implements AfterViewInit {
   }
 
   public onKeyPress(event) {
+    console.log('%c event', 'background: #df03fc; color: #f8fc03', event);
     if (event.keyCode === 13) {
       event.preventDefault();
       if (this.isCorrecting) {
@@ -142,7 +148,7 @@ export class ExercisesPage implements AfterViewInit {
     if (event.keyCode > 48 && event.keyCode < 57) {
       const numberInput = Number(event.key);
       if (!this.isCorrecting && this.current.type === 'option' && numberInput <= this.current.options.length) {
-        // this.response = this.current.options[numberInput - 1];
+        this.response = this.current.options[numberInput - 1];
       }
     }
   }
@@ -150,6 +156,7 @@ export class ExercisesPage implements AfterViewInit {
   public lessonComplete() {
     this.congratulations = true;
     this.completePercent = '100%';
+    this.soundService.emitSound('complete');
     this.userService.setExercisesCompleted(Number(this.lessonId));
   }
 
