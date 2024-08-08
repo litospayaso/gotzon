@@ -52,9 +52,11 @@
       margin-left: 110px;
       &.error {
         background-color: var(--ion-color-danger);
+        min-width: 94px;
       }
       &.correct {
         background-color: var(--ion-color-success);
+        min-width: 94px;
       }
     }  
 
