@@ -198,7 +198,7 @@
       "id": "22",
       "title": "Joan",
       "img": "departures.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     },
@@ -206,7 +206,7 @@
       "id": "23",
       "title": "Nora",
       "img": "signage.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     }
