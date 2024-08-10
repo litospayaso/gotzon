@@ -1,0 +1,93 @@
+[
+  {
+    "spanish": [
+      "Coche"
+    ],
+    "euskaraz": [
+      "Auto",
+      "Kotxe",
+      "Autoa",
+      "Kotxea"
+    ],
+    "tags": [
+      "garraioa",
+      "Garraiobide"
+    ],
+    "id": "25.00"
+  },
+  {
+    "spanish": [
+      "Tren"
+    ],
+    "euskaraz": [
+      "Tren",
+      "Trena"
+    ],
+    "tags": [
+      "garraioa",
+      "Garraiobidea"
+    ],
+    "id": "25.01"
+  },
+  {
+    "spanish": [
+      "Barco"
+    ],
+    "euskaraz": [
+      "Itxasontzi",
+      "Txalupa",
+      "Itxasontzia"
+    ],
+    "tags": [
+      "garraioa",
+      "Garraiobidea"
+    ],
+    "id": "25.02"
+  },
+  {
+    "spanish": [
+      "Bicicleta",
+      "Bici"
+    ],
+    "euskaraz": [
+      "Txirrindu",
+      "Txirrindua",
+      "Txirringa",
+      "Bizikleta"
+    ],
+    "tags": [
+      "garraioa",
+      "Garraiobidea"
+    ],
+    "id": "25.03"
+  },
+  {
+    "spanish": [
+      "Avión"
+    ],
+    "euskaraz": [
+      "Hegazkin",
+      "Hegazkina",
+      "Aireko",
+      "Abioi"
+    ],
+    "tags": [
+      "garraioa",
+      "Garraiobidea"
+    ],
+    "id": "25.04"
+  },
+  {
+    "spanish": [
+      "Metro"
+    ],
+    "euskaraz": [
+      "Urduri"
+    ],
+    "tags": [
+      "Metro",
+      "Metroa"
+    ],
+    "id": "25.05"
+  }
+]

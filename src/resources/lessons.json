@@ -216,7 +216,7 @@
       "id": "24",
       "title": "Etorri",
       "img": "arrivals.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     },
@@ -224,7 +224,7 @@
       "id": "25",
       "title": "Nondik",
       "img": "nondik.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     }
@@ -234,8 +234,8 @@
       "id": "26",
       "title": "Zerez",
       "img": "zerez.png",
-      "lesson": false,
-      "vocabulary": false,
+      "lesson": true,
+      "vocabulary": true,
       "exercises": false
     }
   ],
@@ -244,7 +244,7 @@
       "id": "27",
       "title": "Norekin",
       "img": "norekin.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     }
