@@ -34,9 +34,9 @@
       "Barco"
     ],
     "euskaraz": [
-      "Itxasontzi",
+      "Itsasontzi",
       "Txalupa",
-      "Itxasontzia"
+      "Itsasontzia"
     ],
     "tags": [
       "garraioa",
@@ -82,12 +82,29 @@
       "Metro"
     ],
     "euskaraz": [
-      "Urduri"
+      "Metro"
     ],
     "tags": [
-      "Metro",
-      "Metroa"
+      "garraioa",
+      "Garraiobidea"
     ],
     "id": "26.05"
+  },
+  {
+    "spanish": [
+      "Transporte",
+      "Medio de transporte"
+    ],
+    "euskaraz": [
+      "Garraio",
+      "Garraioa",
+      "Garraiobide",
+      "Garraiobidea"
+    ],
+    "tags": [
+      "garraioa",
+      "Garraiobidea"
+    ],
+    "id": "26.06"
   }
 ]
