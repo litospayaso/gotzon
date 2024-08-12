@@ -254,7 +254,7 @@
       "id": "28",
       "title": "Nork kasua",
       "img": "bow.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     }
