@@ -1,0 +1,411 @@
+[
+  {
+    "spanish": [
+      "Ser"
+    ],
+    "euskaraz": [
+      "Izan"
+    ],
+    "tags": [
+      "Aditzak"
+    ],
+    "id": "29.00"
+  },
+  {
+    "spanish": [
+      "Estar"
+    ],
+    "euskaraz": [
+      "Egon"
+    ],
+    "tags": [
+      "Aditzak"
+    ],
+    "id": "29.01"
+  },
+  {
+    "spanish": [
+      "Ir"
+    ],
+    "euskaraz": [
+      "Joan"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.02"
+  },
+  {
+    "spanish": [
+      "Venir"
+    ],
+    "euskaraz": [
+      "Etorri"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.03"
+  },
+  {
+    "spanish": [
+      "Andar"
+    ],
+    "euskaraz": [
+      "Ibili"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.04"
+  },
+  {
+    "spanish": [
+      "Tener"
+    ],
+    "euskaraz": [
+      "Eduki"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.05"
+  },
+  {
+    "spanish": [
+      "Saber"
+    ],
+    "euskaraz": [
+      "Jakin"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.06"
+  },
+  {
+    "spanish": [
+      "Tener"
+    ],
+    "euskaraz": [
+      "Eduki"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.07"
+  },
+  {
+    "spanish": [
+      "Dar"
+    ],
+    "euskaraz": [
+      "Eman",
+      "Emon"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.08"
+  },
+  {
+    "spanish": [
+      "Llevar"
+    ],
+    "euskaraz": [
+      "Eraman"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.09"
+  },
+  {
+    "spanish": [
+      "Traer"
+    ],
+    "euskaraz": [
+      "Ekarri"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.10"
+  },
+
+  {
+    "spanish": [
+      "Buscar",
+      "Explorar"
+    ],
+    "euskaraz": [
+      "Bilatu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.11"
+  },
+  {
+    "spanish": [
+      "Ver"
+    ],
+    "euskaraz": [
+      "Ikusi"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.12"
+  },
+  {
+    "spanish": [
+      "Salir"
+    ],
+    "euskaraz": [
+      "Irten",
+      "Atera"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.13"
+  },
+  {
+    "spanish": [
+      "Entrar",
+      "Introducir"
+    ],
+    "euskaraz": [
+      "Sartu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.14"
+  },
+  {
+    "spanish": [
+      "Corregir",
+      "Dirigir",
+      "Enderezar"
+    ],
+    "euskaraz": [
+      "Zuzendu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.15"
+  },
+  {
+    "spanish": [
+      "Hablar",
+      "Conversar"
+    ],
+    "euskaraz": [
+      "Hitz egin",
+      "Berba egin",
+      "Mintzatu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.16"
+  },
+  {
+    "spanish": [
+      "Hacer"
+    ],
+    "euskaraz": [
+      "Egin"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.17"
+  },
+  {
+    "spanish": [
+      "Coger",
+      "Tomar",
+      "Agarrar",
+      "Cargar"
+    ],
+    "euskaraz": [
+      "Hartu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.18"
+  },
+  {
+    "spanish": [
+      "Utilizar",
+      "Usar",
+      "Emplear"
+    ],
+    "euskaraz": [
+      "Erabili"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.19"
+  },
+  {
+    "spanish": [
+      "Morir",
+      "Fallecer",
+      "Matar",
+      "Asesinar"
+    ],
+    "euskaraz": [
+      "Hil"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.20"
+  },
+  {
+    "spanish": [
+      "Subir"
+    ],
+    "euskaraz": [
+      "Igo"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.21"
+  },
+  {
+    "spanish": [
+      "Bajar",
+      "Descender"
+    ],
+    "euskaraz": [
+      "Jaitsi",
+      "Bajatu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.22"
+  },
+  {
+    "spanish": [
+      "Viajar"
+    ],
+    "euskaraz": [
+      "Bidaiatu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.23"
+  },
+  {
+    "spanish": [
+      "Unir",
+      "Atar",
+      "Anudar",
+      "Vendar"
+    ],
+    "euskaraz": [
+      "Lotu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.24"
+  },
+  {
+    "spanish": [
+      "Conseguir",
+      "Lograr",
+      "Obtener"
+    ],
+    "euskaraz": [
+      "Lortu",
+      "Iritsi",
+      "Eskuratu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.25"
+  },
+  {
+    "spanish": [
+      "Cortar",
+      "Rajar"
+    ],
+    "euskaraz": [
+      "Ebaki"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.26"
+  },
+  {
+    "spanish": [
+      "Abrir"
+    ],
+    "euskaraz": [
+      "Zabaldu",
+      "Ireki"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.27"
+  },
+  {
+    "spanish": [
+      "Cerrar"
+    ],
+    "euskaraz": [
+      "Itxi",
+      "Hetsi",
+      "zarratu",
+      "zerratu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.29"
+  },
+  {
+    "spanish": [
+      "Cerrar"
+    ],
+    "euskaraz": [
+      "Itxi",
+      "Hetsi",
+      "zarratu",
+      "zerratu"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.29"
+  },
+  {
+    "spanish": [
+      "Decir",
+      "Contar",
+      "Relatar"
+    ],
+    "euskaraz": [
+      "Esan"
+    ],
+    "tags": [
+      "Aditza"
+    ],
+    "id": "29.30"
+  }
+]

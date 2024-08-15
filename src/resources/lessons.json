@@ -264,24 +264,24 @@
       "id": "29",
       "title": "Aditzak",
       "img": "aditzak.png",
-      "lesson": false,
-      "vocabulary": false,
+      "lesson": true,
+      "vocabulary": true,
       "exercises": false
     }
   ],
   [
     {
       "id": "30",
-      "title": "Aspectu puntukaria",
-      "img": "metronome.png",
+      "title": "Gerundio",
+      "img": "paso.png",
       "lesson": false,
       "vocabulary": false,
       "exercises": false
     },
     {
       "id": "31",
-      "title": "trinkoak",
-      "img": "gift.png",
+      "title": "Aspectu puntukaria",
+      "img": "metronome.png",
       "lesson": false,
       "vocabulary": false,
       "exercises": false
@@ -290,6 +290,14 @@
   [
     {
       "id": "32",
+      "title": "trinkoak",
+      "img": "gift.png",
+      "lesson": false,
+      "vocabulary": false,
+      "exercises": false
+    },
+    {
+      "id": "33",
       "title": "Ohiturako puntukaria",
       "img": "planning.png",
       "lesson": false,
@@ -299,7 +307,7 @@
   ],
   [
     {
-      "id": "33",
+      "id": "34",
       "title": "Zertara",
       "img": "zertara.png",
       "lesson": false,
@@ -307,7 +315,7 @@
       "exercises": false
     },
     {
-      "id": "34",
+      "id": "35",
       "title": "Zertarako",
       "img": "zertarako.png",
       "lesson": false,
