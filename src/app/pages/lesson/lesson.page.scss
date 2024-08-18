@@ -39,7 +39,12 @@
     border-left: 18px solid transparent;
     border-right: 0px solid transparent;
     border-top: 22px solid var(--ion-color-primary-shade);
-    }
+  }
+
+  .two-colums {
+    display: flex;
+    flex-direction: row;
+  }
 
   table {
     margin-right: auto;
