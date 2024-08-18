@@ -282,7 +282,7 @@
       "id": "31",
       "title": "Aspectu puntukaria",
       "img": "metronome.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     }
@@ -292,7 +292,7 @@
       "id": "32",
       "title": "trinkoak",
       "img": "gift.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     },
