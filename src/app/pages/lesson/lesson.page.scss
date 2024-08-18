@@ -1,3 +1,5 @@
+$phone: 450px;
+
 .page-container {
   padding: 50px 20px 0 20px;
 }
@@ -46,10 +48,17 @@
     flex-direction: row;
   }
 
+  @media (max-width: $phone) {
+    .two-colums {
+      flex-direction: column;
+    }
+  }
+
   table {
     margin-right: auto;
     margin-left: auto;
     border-collapse: separate !important;
+    margin-bottom: 18px;
 
     th:first-child {
       border-top-left-radius: 16px;
