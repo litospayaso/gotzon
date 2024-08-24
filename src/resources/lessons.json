@@ -300,7 +300,7 @@
       "id": "33",
       "title": "Ohiturako puntukaria",
       "img": "planning.png",
-      "lesson": false,
+      "lesson": true,
       "vocabulary": false,
       "exercises": false
     }
