@@ -8,12 +8,15 @@ import { UserData, UserDataInterface } from '@app/interfaces/userdata.interface'
 export class UserService {
 
   private userData: UserDataInterface = {} as UserDataInterface;
+  public storage: Storage;
 
-  constructor(private storage: Storage) {
+  constructor() {
     this.reloadData();
   }
 
-  public reloadData() {
+  public async reloadData() {
+    this.storage = new Storage();
+    await this.storage.create();
     this.storage.get('userData').then((data) => {
       if (data) {
         this.userData = JSON.parse(data);

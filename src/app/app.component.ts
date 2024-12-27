@@ -20,15 +20,22 @@ export class AppComponent {
   public pageBack = '';
   public widthMenu = '0';
   public appPages = appPages;
+  public storage;
   constructor(
     private platform: Platform,
     private router: Router,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private storage: Storage
   ) {
-    storage.get('lastRoute').then(lastRoute => {
-      if (lastRoute && lastRoute !== '/' && router.url === '/') {
+    this.createDatabase();
+    this.initializeApp();
+  }
+
+  async createDatabase() {
+    this.storage = new Storage();
+    await this.storage.create();
+    this.storage.get('lastRoute').then(lastRoute => {
+      if (lastRoute && lastRoute !== '/' && this.router.url === '/') {
         this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), { skipLocationChange: true });
       }
     });
@@ -36,7 +43,7 @@ export class AppComponent {
       const root: ResolveEnd = event as ResolveEnd;
       let rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
       rootToSave = decodeURIComponent(rootToSave);
-      storage.set('lastRoute', rootToSave);
+      this.storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'home':
@@ -64,7 +71,6 @@ export class AppComponent {
           break;
       }
     });
-    this.initializeApp();
   }
 
   initializeApp() {
