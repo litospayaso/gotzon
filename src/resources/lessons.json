@@ -64,7 +64,7 @@
       "img": "numbers.png",
       "lesson": true,
       "vocabulary": false,
-      "exercises": false
+      "exercises": true
     },
     {
       "id": "8",
@@ -92,7 +92,7 @@
       "img": "egon.png",
       "lesson": true,
       "vocabulary": true,
-      "exercises": false
+      "exercises": true
     },
     {
       "id": "11",
@@ -100,7 +100,7 @@
       "img": "maps.png",
       "lesson": true,
       "vocabulary": false,
-      "exercises": false
+      "exercises": true
     }
   ],
   [

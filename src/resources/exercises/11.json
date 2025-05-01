@@ -1,0 +1,129 @@
+[
+  {
+    "id": "11.01",
+    "question": "El museo está en Santander",
+    "answer": [
+      "Museoa Santanderren dago",
+      "Museo Santanderren dago",
+      "Museo dago Santanderren",
+      "Museoa dago Santanderren"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "11.02",
+    "question": "Estoy en esa calle",
+    "answer": [
+      "Ni nago kale horretan",
+      "Ni kale horretan nago",
+      "nago kale horretan",
+      "kale horretan nago"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "11.03",
+    "question": "Ellos están en aquella montaña",
+    "answer": [
+      "Haiek mendi hartan daude",
+      "Haiek daude mendi hartan",
+      "Mendi hartan daude",
+      "Daude mendi hartan"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "11.04",
+    "question": "Non dago?",
+    "options": [
+      "Kalean dago",
+      "Kale dago",
+      "Autoan nago",
+      "Etxean gaude"
+    ],
+    "answer": [
+      "Kalean dago"
+    ],
+    "translation": "Dónde está? Está en la calle",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "11.05",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Hau",
+        "Hori",
+        "Hura",
+        "Hauek",
+        "Horiek"
+      ],
+      [
+        "Honetan",
+        "Horretan",
+        "Hartan",
+        "Hauetan",
+        "Horietan"
+      ]
+    ],
+    "answer": [
+      "[[\"Hau\",\"Honetan\"],[\"Hori\",\"Horretan\"],[\"Hura\",\"Hartan\"],[\"Hauek\",\"Hauetan\"],[\"Horiek\",\"Horietan\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "11.06",
+    "question": "Nosotros no estamos en Madrid",
+    "answer": [
+      "Gu ez gaude Madrilen",
+      "Gu Madrilen ez gaude",
+      "ez gaude Madrilen",
+      "Madrilen ez gaude"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "11.07",
+    "question": "No estoy en el tren",
+    "answer": [
+      "Ni ez nago trenean",
+      "Ez nago trenean",
+      "Ni trenean ez nago",
+      "Trenean ez nago"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "11.08",
+    "question": "El libro está en esta mesa ",
+    "answer": [
+      "Liburua mahai honetan dago",
+      "Liburua dago mahai honetan"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "11.9",
+    "question": "Mikel ____ dago",
+    "options": [
+      "Santanderen",
+      "arbore hau",
+      "kale",
+      "etxe hartan"
+    ],
+    "answer": [
+      "etxe hartan"
+    ],
+    "translation": "Mikel está en aquella casa",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  }
+]

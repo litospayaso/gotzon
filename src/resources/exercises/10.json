@@ -1,0 +1,124 @@
+[
+  {
+    "id": "10.01",
+    "question": "Ella está cansada",
+    "answer": [
+      "Hura nekatuta dago",
+      "Bera nekatuta dago"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "10.02",
+    "question": "Dónde estáis",
+    "answer": [
+      "Non zaudete?"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "10.03",
+    "question": "Zu ederra  ____",
+    "options": [
+      "zaude",
+      "daude",
+      "zaudete",
+      "dago"
+    ],
+    "answer": [
+      "zude"
+    ],
+    "translation": "Tú estás precioso/a",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "10.04",
+    "question": "Non dago?",
+    "options": [
+      "Kalean dago",
+      "Kale dago",
+      "Autoan nago",
+      "Etxean gaude"
+    ],
+    "answer": [
+      "Kalean dago"
+    ],
+    "translation": "Dónde está? Está en la calle",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "10.05",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Gaude",
+        "Daude",
+        "Nago",
+        "Zaudete"
+      ],
+      [
+        "Gu",
+        "Haiek",
+        "Ni",
+        "Zuek"
+      ]
+    ],
+    "answer": [
+      "[[\"Gaude\",\"Gu\"],[\"Daude\",\"Haiek\"],[\"Nago\",\"Ni\"],[\"Zaudete\",\"Zuek\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "10.06",
+    "question": "Vosotros no estáis bien",
+    "answer": [
+      "Zuek ez zaudete ondo"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "10.07",
+    "question": "El bebé está triste",
+    "answer": [
+      "Haurra triste dago",
+      "Umetxo triste dago",
+      "Haurra dago triste",
+      "Umetxo dago triste"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "10.08",
+    "question": "La taberna está cerrada",
+    "answer": [
+      "Taberna itxita dago",
+      "Taberna hetsirik dago",
+      "Taberna zerratuta dago"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "10.9",
+    "question": "____ etxean nago",
+    "options": [
+      "Amaia",
+      "Ni",
+      "Zu",
+      "Gu"
+    ],
+    "answer": [
+      "Ni"
+    ],
+    "translation": "Yo estoy en casa ",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  }
+]
