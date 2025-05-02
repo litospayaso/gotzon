@@ -33,7 +33,6 @@ export class FeedbackModalComponent implements AfterViewInit {
     public userService: UserService
   ) {
     this.isFirstLoad = true;
-    console.log(`%c this.isFirstLoad`, `background: #df03fc; color: #f8fc03`, this.isFirstLoad);
    }
 
   async ngAfterViewInit() {
@@ -69,7 +68,6 @@ export class FeedbackModalComponent implements AfterViewInit {
   }
 
   iframeLoaded() {
-    console.log(`%c this.`, `background: #df03fc; color: #f8fc03`, this.isFirstLoad);
     setTimeout(() => {
       this.isFirstLoad = false;
     }, 2000);

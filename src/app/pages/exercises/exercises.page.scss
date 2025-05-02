@@ -78,13 +78,68 @@
       
   }
 
-  .correcting-container::after {
+  .correcting-container.correct.one::after {
     position: relative;
     right: 0;
-    background-image: url(https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/assets/B2.svg);
-    background-size: 225px 275px;
+    background-image: url('https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/teacher/1-happy.png');
+    background-size: 275px 275px;
     display: inline-block;
-    width: 225px;
+    width: 275px;
+    height: 275px;
+    content: "";
+  }
+
+  .correcting-container.correct.two::after {
+    position: relative;
+    right: 0;
+    background-image: url('https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/teacher/2-happy.png');
+    background-size: 275px 275px;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    content: "";
+  }
+
+  .correcting-container.correct.three::after {
+    position: relative;
+    right: 0;
+    background-image: url('https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/teacher/3-happy.png');
+    background-size: 275px 275px;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    content: "";
+  }
+
+  .correcting-container.error.one::after {
+    position: relative;
+    right: 0;
+    background-image: url('https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/teacher/1-sad.png');
+    background-size: 275px 275px;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    content: "";
+  }
+
+  .correcting-container.error.two::after {
+    position: relative;
+    right: 0;
+    background-image: url('https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/teacher/2-sad.png');
+    background-size: 275px 275px;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    content: "";
+  }
+
+  .correcting-container.error.three::after {
+    position: relative;
+    right: 0;
+    background-image: url('https://raw.githubusercontent.com/litospayaso/gotzon/master/src/img/teacher/3-sad.png');
+    background-size: 275px 275px;
+    display: inline-block;
+    width: 275px;
     height: 275px;
     content: "";
   }

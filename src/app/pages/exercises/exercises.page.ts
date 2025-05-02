@@ -25,6 +25,7 @@ export class ExercisesPage implements AfterViewInit {
   public audio = '';
   public totalExercises: number;
   public congratulations = false;
+  public teacher = 'one';
 
   public linkResponse: string[] = [];
   public selectedLinkedItem: number;
@@ -91,6 +92,7 @@ export class ExercisesPage implements AfterViewInit {
 
   public checkResponse() {
     let correct = false;
+    this.teacher = ['', 'one', 'two', 'three'][Math.floor(Math.random() * 3) + 1];
     if (this.current.type === 'link') {
       const objectResponse = this.current.items[1].map((e, index) => [this.linkResponse[index], e]).sort((a, b) => {
         if (a[0] < b[0]) { return -1; }
@@ -136,7 +138,6 @@ export class ExercisesPage implements AfterViewInit {
   }
 
   public onKeyPress(event) {
-    console.log('%c event', 'background: #df03fc; color: #f8fc03', event);
     if (event.keyCode === 13) {
       event.preventDefault();
       if (this.isCorrecting) {

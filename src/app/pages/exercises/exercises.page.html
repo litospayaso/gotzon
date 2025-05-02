@@ -67,8 +67,8 @@
       </ion-grid>
     </div>
 
-    <div class="correcting-container" [ngClass]="{'correcting': isCorrecting }">
-      <div class="evaluation" [ngClass]="evaluationClass">
+    <div class="correcting-container" [ngClass]="[isCorrecting ? 'correcting' : '', evaluationClass ? evaluationClass : '',  teacher]">
+      <div [ngClass]="[evaluationClass ? evaluationClass : '', 'evaluation']">
         {{isCorrecting}}
       </div>
     </div>
