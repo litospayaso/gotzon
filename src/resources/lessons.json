@@ -110,7 +110,7 @@
       "img": "nolakoa.png",
       "lesson": true,
       "vocabulary": true,
-      "exercises": false
+      "exercises": true
     },
     {
       "id": "13",

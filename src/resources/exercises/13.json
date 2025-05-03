@@ -1,0 +1,127 @@
+[
+  {
+    "id": "13.01",
+    "question": "Cómo estais vosotros?",
+    "answer": [
+      "Nola zaudete zuek?",
+      "Nola zaudete?",
+      "Zelan zaudete zuek?",
+      "Zelan zaudete?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "13.02",
+    "question": "Cómo estás?",
+    "answer": [
+      "Nola zaude?",
+      "Zelan zaude?"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "13.03",
+    "question": "___ haiek?",
+    "options": [
+      "Nolakoa dira",
+      "NolakoaK daude",
+      "Nola daude",
+      "Nola dira"
+    ],
+    "answer": [
+      "Nolakoak dira"
+    ],
+    "translation": "¿Cómo están ellos?",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "13.04",
+    "question": "zelan dago garagardoa?",
+    "options": [
+      "Garagardoa hotz dago",
+      "Garagardoa altua da",
+      "Garagardoa hotz da",
+      "Garagardoa nekatuta dago"
+    ],
+    "answer": [
+      "Garagardoa hotz dago"
+    ],
+    "translation": "Cómo está la cerveza? La cerveza está fría",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "13.05",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Nolakoa",
+        "Nolakoak",
+        "Nola"
+      ],
+      [
+        "da",
+        "dira",
+        "dago"
+      ]
+    ],
+    "answer": [
+      "[[\"Nolakoa\",\"da\"],[\"Nolakoak\",\"dira\"],[\"Nola\",\"dago\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "13.06",
+    "question": "___ daude ateak?",
+    "options": [
+      "Nolakoak",
+      "Zelakoak",
+      "Zelan",
+      "Haiek"
+    ],
+    "answer": [
+      "Zelan"
+    ],
+    "type": "option",
+    "translation": "Cómo están las puertas",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "13.07",
+    "question": "Zelan zaudete?",
+    "answer": [
+      "Cómo estáis?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "13.08",
+    "question": "Cómo están las flores?",
+    "answer": [
+      "Zelan daude loreak?",
+      "Nola daude loreak?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "13.09",
+    "question": "____ da ahizpa?",
+    "options": [
+      "Nola",
+      "Nolakoak",
+      "Nolakoa"
+    ],
+    "answer": [
+      "Nola"
+    ],
+    "translation": "Cómo está la hermana?",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  }
+]

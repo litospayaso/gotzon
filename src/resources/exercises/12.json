@@ -1,0 +1,92 @@
+[
+  {
+    "id": "12.01",
+    "question": "Cómo es Marta?",
+    "answer": [
+      "Nolakoa da Marta?",
+      "Zelakoa da Marta?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "12.02",
+    "question": "Cómo eres?",
+    "answer": [
+      "Nolakoa zara?",
+      "Zelakoa zara?"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "12.03",
+    "question": "___ auzoak?",
+    "options": [
+      "Nolakoa da",
+      "NolakoaK daude",
+      "Nolakoak dira",
+      "Nola dira"
+    ],
+    "answer": [
+      "Nolakoak dira"
+    ],
+    "translation": "¿Cómo son los barrios?",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "12.04",
+    "question": "Nolakoa da Mikel?",
+    "options": [
+      "Mikel altua da",
+      "Mikel nekatuta dago",
+      "Mikel ez dago",
+      "Mikel etorri da"
+    ],
+    "answer": [
+      "Mikel altua da"
+    ],
+    "translation": "Cómo es Mikel? Mikel es alto",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "12.05",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Nolakoa",
+        "Nolakoak"
+      ],
+      [
+        "da",
+        "dira"
+      ]
+    ],
+    "answer": [
+      "[[\"Nolakoa\",\"da\"],[\"Nolakoak\",\"dira\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "12.06",
+    "question": "Cómo somos?",
+    "answer": [
+      "Nolakoak gara?",
+      "Zelakoak gara?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "12.07",
+    "question": "Zelakoak zarete?",
+    "answer": [
+      "Cómo sois?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  }
+]
