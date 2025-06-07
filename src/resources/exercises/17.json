@@ -1,0 +1,128 @@
+[
+  {
+    "id": "18.01",
+    "question": "El libro de Aitor",
+    "answer": [
+      "Aitorren liburua"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "18.02",
+    "question": "El juego de los niños es divertido",
+    "answer": [
+      "Haurren jolasa dibertigarria da",
+      "Umeen jolasa dibertigarria da"
+    ],
+    "type": "euskera",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "18.03",
+    "question": "Noren da aulki hori? ___ da",
+    "options": [
+      "Amaia",
+      "Amaiarena",
+      "Amaiaen",
+      "Amaian"
+    ],
+    "answer": [
+      "zara"
+    ],
+    "translation": "De quien es esa silla? Es la de Amaia",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "18.04",
+    "question": "Nor etorri da?",
+    "options": [
+      "Mikel etorri naiz",
+      "Mikel bizi da",
+      "Zu etorri zarete",
+      "Hura etorri da"
+    ],
+    "answer": [
+      "Hura etorri da"
+    ],
+    "translation": "Quién ha venido? Él ha venido",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  },
+  {
+    "id": "18.05",
+    "question": "Lotu hiztegiak",
+    "items": [
+      [
+        "Umearen",
+        "Umeen",
+        "Egon",
+        "Ibili"
+      ],
+      [
+        "Venir",
+        "Ir",
+        "Estar",
+        "Andar"
+      ]
+    ],
+    "answer": [
+      "[[\"Etorri\",\"Venir\"],[\"Joan\",\"Ir\"],[\"Egon\",\"Estar\"],[\"Ibili\",\"Andar\"]]"
+    ],
+    "type": "link",
+    "title": "Une con la respuesta correcta"
+  },
+  {
+    "id": "18.06",
+    "question": "No están los papeles del coche",
+    "answer": [
+      "Ez daude autoaren paperak",
+      "Ez daude automobilaren paperak",
+      "Ez daude beribilaren paperak",
+      "Ez daude kotxearen paperak",
+      "autoaren paperak ez daude",
+      "automobilaren paperak ez daude",
+      "beribilaren paperak ez daude",
+      "kotxearen paperak ez daude"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "18.07",
+    "question": "De quienes son los zapatos?",
+    "answer": [
+      "Norenak dira zapatak?",
+      "Noren zapatak dira?"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "18.08",
+    "question": "de quien es ",
+    "answer": [
+      "Trena ez da atera berandu",
+      "Trena ez da berandu atera"
+    ],
+    "type": "gaztelania",
+    "title": "Traduce la siguiente oración"
+  },
+  {
+    "id": "18.9",
+    "question": "Amaia berandu ____ da",
+    "options": [
+      "joan",
+      "bizi",
+      "hil",
+      "egon"
+    ],
+    "answer": [
+      "joan"
+    ],
+    "translation": "Amaia ha ido tarde ",
+    "type": "option",
+    "title": "Elige la respuesta correcta"
+  }
+]
