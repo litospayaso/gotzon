@@ -1,7 +1,7 @@
 {
   "name": "gotzon",
-  "version": "0.0.8",
-  "author": "Ionic Framework",
+  "version": "1.0.8",
+  "author": "Angelita",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -15,6 +15,7 @@
     "be": "node ./backend/server.js",
     "apk": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew assembleDebug && cd ..",
     "ionic-build": "ionic build --prod",
+    "sign": ".sign\\sign.bat",
     "build-prod": "npx ionic build --prod -- --base-href=\"https://litospayaso.github.io/gotzon/\"",
     "replace-base-href": "node ./scripts/replace.js",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=www",
@@ -65,6 +66,7 @@
     "@angular/compiler": "^18.2.13",
     "@angular/compiler-cli": "^18.0.0",
     "@angular/language-service": "^18.0.0",
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "6.1.2",
     "@ionic/angular-toolkit": "^11.0.1",
     "@types/jasmine": "~5.1.0",

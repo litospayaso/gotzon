@@ -59,7 +59,7 @@
     </ion-fab-button>
   </ion-fab>
 
-  <ion-fab class="training-button" vertical="bottom" horizontal="end" slot="fixed" skipLocationChange
+  <ion-fab *ngIf="isAdmin" class="training-button" vertical="bottom" horizontal="end" slot="fixed" skipLocationChange
     routerDirection="root" [routerLink]="['/vocabulary']">
     <ion-fab-button>
       <ion-icon name="barbell-outline"></ion-icon>
