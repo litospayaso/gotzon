@@ -1,6 +1,6 @@
 {
   "name": "gotzon",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "author": "Angelita",
   "homepage": "https://ionicframework.com/",
   "scripts": {
@@ -16,6 +16,7 @@
     "apk": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew assembleDebug && cd ..",
     "ionic-build": "ionic build --prod",
     "sign": ".sign\\sign.bat",
+    "apk-assemble": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew bundleRelease && cd .. && npm run sign",
     "build-prod": "npx ionic build --prod -- --base-href=\"https://litospayaso.github.io/gotzon/\"",
     "replace-base-href": "node ./scripts/replace.js",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=www",

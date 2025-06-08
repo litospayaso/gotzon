@@ -17,6 +17,7 @@ $RECYCLE.BIN/
 log.txt
 todo.txt
 npm-debug.log*
+.sign
 
 /.angular
 /.idea
@@ -33,3 +34,5 @@ npm-debug.log*
 /www
 
 /database
+
+*.aab
