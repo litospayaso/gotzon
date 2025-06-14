@@ -16,6 +16,11 @@
         background-color: transparent;
         height: 0;
 
+        .progress-element {
+          height: 8em;
+          width: 8em;
+        }
+
         &.zero,
         &.completed {
           svg {
@@ -53,8 +58,8 @@
       .theme-icon {
         border: solid 8px #e5e5e5;
         border-radius: 50%;
-        height: 110px;
-        width: 110px;
+        height: 8em;
+        width: 8em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,16 +67,25 @@
         &.completed {
           border-color: var(--ion-color-success-tint);
         }
+
+        img {
+          height: 5em;
+          width: 5em;
+        }
       }
       .completed-container {
         display: none;
         height: 0px;
-        width: 24px;
+        width: 6rem;
         position: relative;
         top: -22px;
         left: 70px;
         &.completed {
           display: block;
+        }
+        img {
+          height: 2rem;
+          width: 2rem;
         }
       }
       .theme-title {
@@ -79,7 +93,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        max-width: 110px;
+        max-width: 8em;
         margin-top: 12px;
       }
     }
