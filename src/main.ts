@@ -9,7 +9,6 @@ if (environment.production) {
 }
 
 const addViewport = () => {
-  console.log('%c document.querySelector(head)', 'background: #df03fc; color: #f8fc03', document.querySelector('head'));
   if (!document.querySelector('head').querySelector('meta[name="viewport"]')) {
     const meta = document.createElement('meta');
     meta.setAttribute('name', 'viewport');
