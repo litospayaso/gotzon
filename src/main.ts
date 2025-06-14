@@ -8,5 +8,17 @@ if (environment.production) {
   enableProdMode();
 }
 
+const addViewport = () => {
+  console.log('%c document.querySelector(head)', 'background: #df03fc; color: #f8fc03', document.querySelector('head'));
+  if (!document.querySelector('head').querySelector('meta[name="viewport"]')) {
+    const meta = document.createElement('meta');
+    meta.setAttribute('name', 'viewport');
+    meta.setAttribute('content', 'viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    document.querySelector('head').append(meta);
+  }
+}
+
+addViewport();
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
